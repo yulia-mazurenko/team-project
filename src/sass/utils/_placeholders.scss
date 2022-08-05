@@ -1,0 +1,61 @@
+%list {
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+}
+
+%link {
+    text-decoration: none;
+}
+
+%section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+%section__title {
+    font-family: 'Titan One';
+    font-size: 58px;
+    line-height: calc(66 / 58);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    text-align: center;
+
+    color: var(--secondary-text-color);
+
+    @media screen and (min-width: $tablet) {
+        font-size: 48px;
+        line-height: calc(55 / 48);                   
+    }
+
+    @media screen and (min-width: $desktop) {                 
+            font-size: 58px;
+            line-height: calc(66 / 58);        
+    }
+    
+}
+
+.container {
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0 auto;
+
+    @media screen and (min-width: $mobile) {
+        width: $mobile;
+    }
+
+    @media screen and (min-width: $tablet) {
+        width: $tablet;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: $desktop;
+        padding-left: 16px;
+        padding-right: 16px;
+
+    }
+}
+}

@@ -1,5 +1,16 @@
+@import './utils/breakpoints';
+@import './utils/variables';
+@import './utils/visually-hidden';
 @import './common';
 @import './fonts';
+@import './base';
+@import './utils/placeholders';
 @import './header';
-@import './section';
+@import './hero';
+@import './products';
+@import './about';
+@import './advantages';
+@import './gallery';
+@import './reviews';
+@import './contacts';
 @import './footer';
