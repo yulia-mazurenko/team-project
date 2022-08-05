@@ -1,0 +1,17 @@
+body {
+    color: var(--main-text-color);
+    background-color: var(--main-background-color);
+
+    font-family: DM Sans, sans-serif;
+    letter-spacing: 0.04em;
+}
+
+body.is-open {
+    overflow: hidden;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
