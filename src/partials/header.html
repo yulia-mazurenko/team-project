@@ -1,1 +1,55 @@
-<header>Хедер страницы</header>
+<header class="page-header">
+  <div class="page-header__item">
+    <a href="./index.html" class="page-header__logo">
+      <img
+        class="page-header__logo-picture"
+        src="./images/logo.svg"
+        width="199"
+        height="50"
+        alt="Logo"
+      />
+    </a>
+
+    <div class="page-header__wrapper" id="mobile-menu" data-menu>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About us</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">How it’s made?</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Our products</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="page-header__button">
+        <span>Buy now</span>
+        <svg width="4" height="8">
+          <use href="./images/icons.svg#icon-arrow"></use>
+        </svg>
+      </button>
+    </div>
+
+    <button type="button" class="burger-menu" data-menu-button>
+      <svg
+        width="20"
+        height="12"
+        class="burger-menu__icons"
+        aria-label="Переключатель мобильного меню"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <!-- <use class="burger-menu__icon-burger" href="../images/icons.svg#"></use>
+        <use class="burger-menu__icon-cross" href="./images/close.svg"></use> -->
+      </svg>
+    </button>
+  </div>
+</header>
