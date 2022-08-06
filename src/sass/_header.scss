@@ -129,7 +129,7 @@ padding-bottom: 8px;
 
         background-color: var(--mobile-menu-background-color);
 
-        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: transform var(--animation-timing-function);
     }
 
     @media screen and (min-width: $desktop) {
@@ -147,7 +147,7 @@ padding-bottom: 8px;
 }
 
 .page-header__button {
-    // @extend %button;  
+    @extend %button;  
 
     @media screen and (max-width: 1199px) {
         width: 186px;   
@@ -166,7 +166,7 @@ padding-bottom: 8px;
     display: inline-block;
     margin: 0;
     padding: 0;
-    border: none;
+    // border: none;
     background-color: transparent;
 
     & .burger-menu__icon-cross {
@@ -185,12 +185,3 @@ padding-bottom: 8px;
     }
 }
 
-// .burger-menu__icon-burger {
-//     width: 20px;
-//     height: 12px;
-// }
-
-// .burger-menu__icon-cross {
-//     width: 14px;
-//     height: 14px;
-// }
