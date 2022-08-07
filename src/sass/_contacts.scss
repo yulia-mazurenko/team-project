@@ -1,0 +1,315 @@
+.contacts{
+    @extend %section;
+    // background-color: var(--third-background-color);
+    background: linear-gradient(to bottom,  #ffffff 0%,#ffffff 19%,#fff5f6 19%,#fff5f6 100%);
+}
+
+.contacts__list{
+    @extend %list;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 32px;
+
+    @media screen and(min-width: $tablet) {
+        margin-bottom: 60px; ;
+        justify-content: space-between;
+        }
+
+}
+
+.contacts__item{
+    background-color: var(--main-text-color);
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    padding: 40px 30px 40px 32px;
+    width: 280px ;
+    margin-bottom: 20px;
+
+   
+    @media screen and(min-width: $tablet) {
+        width: 224px ;
+        margin-bottom: 0px;
+        }
+
+    @media screen and(min-width: $desktop) {
+        padding: 40px;
+        width: 368px ;
+    }
+
+    
+}
+
+.contacts__location{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 16px;
+    background-color: var(--beige-background-color);
+    border-radius: 4px;
+    font-size: 12px;
+    line-height: 1.83;
+    letter-spacing: 0.04em;
+    text-transform:uppercase;
+    color: var(--main-text-color);
+    margin-bottom: 20px;
+      
+
+    @media screen and(min-width: $tablet) {
+        font-size: 16px;
+        line-height: 1.87;
+        border-radius: 6px;
+        width: 73px;
+        height: 28px;
+        margin-bottom: 32px;
+       
+        }
+
+    @media screen and(min-width: $desktop) {
+        width: 75px;
+        height: 28px;
+     
+    }
+}
+
+.contacts__location-second{
+    background-color: var(--green-background-color);
+    width: 130px;
+
+    @media screen and(min-width: $tablet) {
+      width: 138px;
+      height: 28px;
+        }
+}
+
+.contacts__city{
+    font-size: 12px;
+    line-height: 1.83;
+    letter-spacing: 0.04em;
+    color: var(--paragraph-text-color);
+    margin-bottom: 8px;
+
+    @media screen and(min-width: $tablet) {
+        font-size: 14px;
+        line-height: 1.86;
+        margin-bottom: 12px;
+        }
+
+    @media screen and(min-width: $desktop) {
+        font-size: 16px;
+        line-height: 1.87;
+        margin-bottom: 8px;
+        }
+
+}
+
+.contacts__text{
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--description-text-color);
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #e1e1e1;
+
+    @media screen and(min-width: $tablet) {
+        font-size: 14px;
+        line-height: 1.64;
+        padding-bottom: 32px;
+        margin-bottom: 32px;
+        }
+
+    @media screen and(min-width: $desktop) {
+        font-size: 16px;
+        line-height: 1.81;
+        }
+}
+
+.contacts__info{
+    @extend %list;
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 24px;
+    margin-bottom: 32px;
+
+    @media screen and(min-width: $tablet) {
+        padding-bottom: 32px;
+        margin-bottom: 32px;
+          }
+
+}
+
+.contacts__schedule{
+    @extend %list;
+    margin-bottom: 8px;
+
+    @media screen and(min-width: $tablet) {
+      margin-bottom: 12px;
+        }
+}
+
+.contacts__graph{
+    font-size: 12px;
+    line-height: 1.83;
+    color: var( --paragraph-text-color);
+
+    @media screen and(min-width: $tablet) {
+        font-size: 14px;
+        line-height: 1.86;
+        }
+
+    @media screen and(min-width: $desktop) {
+        font-size: 16px;
+        line-height: 1.87;
+        }
+
+}
+
+.contacts__timetable{
+    font-size: 12px;
+    line-height: 1.83;
+    color: var(--third-text-color);
+
+
+    @media screen and(min-width: $tablet) {
+        font-size: 14px;
+        line-height: 1.86;
+        }
+
+    @media screen and(min-width: $desktop) {
+        font-size: 16px;
+        line-height: 1.87;
+        }
+
+}
+
+.contacts__connection{
+    @extend %list;
+    font-size: 12px;
+    line-height: 1.5;
+    
+    @media screen and(min-width: $tablet) {
+        font-size: 14px;
+        line-height: 1.86;
+        }
+
+    @media screen and(min-width: $desktop) {
+        font-size: 16px;
+        line-height: 1.81;
+        }
+}
+.contacts__mail{
+    @extend %link;
+    color: #907E82;
+    transition: color var(--animation-timing-function);
+}
+
+
+.contacts__tel{
+    @extend %link;
+    color: #907E82;
+    transition: color var(--animation-timing-function);
+}
+
+
+.contacts__mail:hover,
+.contacts__tel:hover,
+.contacts__mail:focus,
+.contacts__tel:focus
+{
+    color: var(--secondary-text-color);
+}
+
+
+
+/**
+  |============================
+  | BUTTON
+  |============================
+*/
+
+.btnz {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 22px;
+    border: none;
+    cursor: pointer;
+}
+
+.contacts__btn{
+    @extend %list;
+    margin-left: auto;
+    margin-right: auto;
+
+    
+
+    @media screen and(min-width: $tablet) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        }
+    
+  }
+
+  .contacts__btn-group{
+    display: flex;
+
+   
+ }
+
+.btnz-accent{
+    background-color: #D41342;
+    color: var(--main-text-color);
+    width: 161px;
+    height: 44px;
+    margin-right: 14px;
+    margin-bottom: 10px;
+
+    &:hover,
+    &:focus {
+        
+        box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 8%), 0px 2px 2px rgb(0 0 0 / 12%);
+        transform: scale(1.1);
+        transition: transform var(--animation-timing-function);
+    }
+
+    @media screen and(min-width: $tablet) {
+        margin-bottom: 0px;
+        }
+
+    @media screen and(min-width: $desktop) {
+        margin-right: 12px;
+        }
+
+}
+
+.btnz-white{
+    background-color: var(--main-background-color);
+    color: var(--secondary-text-color);
+    width: 161px;
+    height: 44px;
+     transition: background-color, var(--animation-timing-function); 
+     transition: transform var(--animation-timing-function);
+
+    &:hover,
+    &:focus {
+        background-color: #ECEBEB;
+        box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 8%), 0px 2px 2px rgb(0 0 0 / 12%);
+        transform: scale(1.1);
+    }
+
+}
+
+.btn__link{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+

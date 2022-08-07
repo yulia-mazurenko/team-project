@@ -1,0 +1,16 @@
+%button {
+    border-radius: 22px;
+    border: none;
+    width: 159px;
+    height: 44px;
+          
+    color: var(--secondary-text-color);
+    background-color: var(--main-background-color);
+    
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(21 / 16);
+    
+    cursor: pointer;
+}
