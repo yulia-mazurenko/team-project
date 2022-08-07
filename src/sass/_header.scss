@@ -75,6 +75,7 @@ padding-bottom: 8px;
 
     @extend %link;
     color: var(--main-text-color);
+    transition: color var(--animation-timing-function);
 
     font-weight: 700;
     font-size: 14px;
@@ -94,6 +95,7 @@ padding-bottom: 8px;
 }
 
 .page-header__wrapper {
+    position: relative;
     z-index: 999;
     
     @media screen and (max-width: 320px) {
@@ -149,38 +151,46 @@ padding-bottom: 8px;
 .page-header__button {
     @extend %button;  
 
+    @media screen and (max-width: 1199px) {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+    }
+
     @media screen and (max-width: 767px) {
             display: none;
-        }       
+        }        
 }
 
 .mobile-menu__button {
+
     @extend %button;  
 
-        @media screen and (max-width: 1199px) {
-            width: 186px;
-            margin-bottom: 20px;
-        }
-    
-        @media screen and (max-width: 767px) {
-            width: 209px;
-            margin-bottom: 20px;
-        }
+    @media screen and (max-width: 1199px) {
+        width: 186px;
+        margin-bottom: 20px;
+    }
 
-        @media  screen and (min-width: $desktop) {
-            display: none;
-        }
+    @media screen and (max-width: 767px) {
+        width: 209px;
+        margin-bottom: 20px;
+    }
+
+    @media  screen and (min-width: $desktop) {
+        display: none;
+    }
 }
 
 .page-header__wrapper.is-open ~ .burger-menu {
+
     @media screen and (min-width: $tablet) {
-z-index: 9999;
-    position: absolute;
-    top: 20px;
-    right: 32px;
+        z-index: 9999;
+        position: absolute;
+        top: 20px;
+        right: 32px;
     }
-   
-}
+   }
 
 .burger-menu {
     z-index: 9999;
@@ -215,7 +225,5 @@ z-index: 9999;
     }
 }
 
-.burger-menu__icons {
-    fill: currentColor;
-}
+
 
