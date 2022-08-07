@@ -94,7 +94,7 @@ padding-bottom: 8px;
 }
 
 .page-header__wrapper {
-    z-index: 990;
+    z-index: 999;
     
     @media screen and (max-width: 320px) {
         width: 100%;
@@ -111,12 +111,11 @@ padding-bottom: 8px;
         width: 254px;
         height: 1020px;
 
-        padding-top: 58px;
-        
+        padding-top: 58px;        
     }
 
     @media screen and (max-width: 1199px) {
-        position: fixed;
+        position: absolute;
 
         display: flex;
         flex-direction: column-reverse;
@@ -142,37 +141,62 @@ padding-bottom: 8px;
 .page-header__wrapper.is-open {
 
     @media screen and (max-width: 1199px) {
-        transform: translateX(-100%);
+        transform: translateX(0);
     }
+
 }
 
 .page-header__button {
     @extend %button;  
 
-    @media screen and (max-width: 1199px) {
-        width: 186px;   
-        margin-bottom: 20px;
-    }
-
     @media screen and (max-width: 767px) {
-        width: 209px;   
-        margin-bottom: 20px;
-    }    
+            display: none;
+        }       
+}
+
+.mobile-menu__button {
+    @extend %button;  
+
+        @media screen and (max-width: 1199px) {
+            width: 186px;
+            margin-bottom: 20px;
+        }
+    
+        @media screen and (max-width: 767px) {
+            width: 209px;
+            margin-bottom: 20px;
+        }
+
+        @media  screen and (min-width: $desktop) {
+            display: none;
+        }
+}
+
+.page-header__wrapper.is-open ~ .burger-menu {
+    @media screen and (min-width: $tablet) {
+z-index: 9999;
+    position: absolute;
+    top: 20px;
+    right: 32px;
+    }
+   
 }
 
 .burger-menu {
-    z-index: 999;
-
-    display: inline-block;
+    z-index: 9999;
     margin: 0;
     padding: 0;
-    // border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+       // border: none;
+   
     background-color: transparent;
 
-    & .burger-menu__icon-cross {
+    &__icon-close {
         display: none;
     }
-    &.is-open .burger-menu__icon-cross {
+    &.is-open .burger-menu__icon-close {
         display: block;
     }
 
@@ -180,8 +204,18 @@ padding-bottom: 8px;
         display: none;
     }
 
+@media screen and (min-width: $tablet) {
+    position: absolute;
+    top: 46px;
+    right: 224px;
+    }
+
     @media screen and (min-width: $desktop) {
         display: none;
     }
+}
+
+.burger-menu__icons {
+    fill: currentColor;
 }
 
