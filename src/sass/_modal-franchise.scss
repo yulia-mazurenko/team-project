@@ -61,7 +61,7 @@
     height: 30px;
     border-radius: 50%;
     background-color: var(--white-color);
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.7);
     padding: 0px;
     cursor: pointer;
     }
@@ -72,7 +72,7 @@
 }
 
 .modal__close-btn:hover .icon__close-btn{
-        fill: #D41443;
+        fill: var(--secondary-text-color);
     }
 
 
@@ -125,7 +125,7 @@
     line-height: 1.5;
     text-align: center;
     letter-spacing: 0.04em;
-    color: #D41443;   
+    color: var(--secondary-text-color);   
 
 
 @media screen and(min-width: $desktop) {
@@ -169,7 +169,7 @@
     font-size: 13px;
     line-height: 1.16;
     letter-spacing: 0.04em;
-    color: #D41443;
+    color: var(--secondary-text-color);
 }
 
 
@@ -188,11 +188,11 @@
     transition: border var(--animation-timing-function);
 
 &:focus{
-    border: 1px solid #D41443;
+    border: 1px solid var(--secondary-text-color);
     }
 
 &:focus + .form__icon   {
-    fill: #D41443;
+    fill: var(--secondary-text-color);
     }
 
 }
@@ -223,7 +223,7 @@
     }
     
     &:focus {
-        border: 1px solid #D41443;
+        border: 1px solid var(--secondary-text-color);
       }
      
 }
@@ -256,7 +256,8 @@
 }
 
 .form__checkbox-icon{
-    fill: #D41443;
+    fill: var(--secondary-text-color);
+    // opacity: 0;
 }
 
 .form__checkbox-custom{
@@ -271,6 +272,7 @@
     color: var(--black-color);
     transition: background-color, var(--animation-timing-function);
     transition: outline-color, var(--animation-timing-function);
+   
 }
 
 
@@ -280,15 +282,13 @@
 
 
 .form__checkbox-input:checked + .form__checkbox-custom {
-    background-color: #D41443;
-    outline-color: #D41443;
+    background-color: var(--secondary-text-color);
+    outline-color: var(--secondary-text-color);
+    // opacity: 1;
 }
 
 .agreement{
-    color: #D41443;
+    color: var(--secondary-text-color);
+    text-decoration: var(--secondary-text-color);
 }
 
-.icon-close{
-    color: red;
-    fill: red;
-}

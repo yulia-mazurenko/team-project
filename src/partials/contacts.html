@@ -76,8 +76,12 @@
       <div class="contacts__btn-group">
       <ul class="contacts__btn">
         <!-- <li><a class="btnz btnz-accent btnz-test" href="https://goo.gl/maps/wgbN2FhfkzLM5yPC6" target="_blank" rel="noopener noreferrer" >Open</a></li> -->
-        <li><button type="button" class="btnz btnz-accent" onclick="location.href='https://goo.gl/maps/wgbN2FhfkzLM5yPC6'">Our Locations</button></li>
-        <li><button type="button" class="btnz btnz-white" data-modal-franchise-open>Franchise</button></li>
+        <li><button type="button" class="btnz btnz-accent" data-modal-locations-open>Our Locations
+          <svg class="icon-arrow-z" width="5px" height="8px" fill="#FFFFFF"><use href="./images/iconx.svg#icon-arrow-z"></use></svg>
+      </button></li>
+        <li><button type="button" class="btnz btnz-white" data-modal-franchise-open>Franchise
+          <svg class="icon-arrow-x" width="5px" height="8px" fill="#D41443"><use href="./images/iconx.svg#icon-arrow-x"></use></svg>
+        </button></li>
           
       </ul>
     </div>
@@ -89,13 +93,12 @@
     </div>
   </section>
 
-
     <!-- Modal Window franchise -->
     <div class="backdrop is-hidden" data-modal-franchise>
       <div class="modal">
         <button class="modal__close-btn" type="button" data-modal-franchise-close>
           <svg class="icon-close" width="18px" height="18px" fill="red">
-            <use href="./images/icons.svg#icon-arrow"></use>
+            <use href="./images/iconx.svg#icon-close"></use>
           </svg>
         </button>
 
@@ -159,3 +162,27 @@
         </form>
       </div>
     </div>
+
+/**
+  |============================
+  | button up
+  |============================
+*/
+    <a class="back_to_top" title="up">
+           <svg class="icon-up" width="50px" height="50px">
+        <use href="./images/iconx.svg#icon-up"></use>
+      </svg>
+    </a>
+
+     <!-- Modal Window Google maps -->
+    <div class="backdrop is-hidden" data-modal-locations>
+      <div class="modal-locations">
+        <button class="modal__close-btn" type="button" data-modal-locations-close>
+          <svg class="icon-close" width="18px" height="18px" fill="red">
+            <use href="./images/iconx.svg#icon-close"></use>
+          </svg>
+        </button>
+        <iframe class="modal__maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830990847!2d-74.11976332982557!3d40.6976637483265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2z0J3RjNGOLdCZ0L7RgNC6LCDQodCo0JA!5e0!3m2!1sru!2sru!4v1659889603951!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+   
