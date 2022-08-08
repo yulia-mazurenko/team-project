@@ -3,10 +3,40 @@
     padding-bottom: 40px;
     background-color: var(--third-background-color);
 
-    @media screen and (min-width: $desktop) {
-        background-image: url(../images/about/section-aboutbg.jpg); 
+    @media screen and (min-width: $mobile) {
+        background-image: url(../images/about/bg\ mob-min.jpg); 
         padding-bottom: 60px; 
     } 
+}
+
+@media (min-resolution: 2dppx) {
+    .about {
+        background-image: url(../images/about/bg\ mob@2x-min.jpg);
+    }
+}
+
+@media (min-resolution: 3dppx) {
+    .about {
+        background-image: url(../images/about/bg\ mob@3x-min.jpg);
+    }
+}
+
+@media (min-width: $desktop) {
+    .about {
+        background-image: url(../images/about/section-aboutbg.jpg);
+    }
+
+    @media (min-resolution: 2dppx) {
+        .about {
+            background-image: url(../images/about/bg\ @2x-min.jpg);
+        }
+    }
+
+        @media (min-resolution: 3dppx) {
+            .about {
+                background-image: url(../images/about/bg@3x-min.jpg);
+            }
+        }
 }
 
 .text {
