@@ -1,0 +1,62 @@
+<section class="about">
+  <div class="about__container container">
+    <p class="about__title">tradition and love</p>
+    <h2 id="about" class="about__caption">how it’s made?</h2>
+    <picture class="about__pic">
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+          ./src/images/about/l.png    1x,
+          ./src/images/about/l@2x.png 2x,
+          ./src/images/about/l@3x.png 3x
+        "
+        type="image/jpg"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./src/images/about/m.png    1x,
+          ./src/images/about/m@2x.png 2x,
+          ./src/images/about/m@3x.png 3x
+        "
+        type="image/jpg"
+      />
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          ./src/images/about/s.png    1x,
+          ./src/images/about/s@2x.png 2x,
+          ./src/images/about/s@3x.png 3x
+        "
+        type="image/jpg"
+      />
+      <img
+        class="about__img"
+        src="./images/about/l.png"
+        alt="milk"
+        width="501"
+        height="501"
+      />
+    </picture>
+    <div class="text">
+      <p class="about__main-text">
+        Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
+        cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at
+        justo fringilla.
+      </p>
+      <p class="about__text">
+        Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
+        Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
+        suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
+        tincidunt.
+      </p>
+      <p class="about__text">Aliquam erat volutpat. Aenean accumsan.</p>
+    </div>
+    <button class="about__button">
+      <span>Read more</span>
+      <svg width="4" height="8">
+        <use href="./images/icons.svg#icon-arrow"></use>
+      </svg>
+    </button>
+  </div>
+</section>
