@@ -786,9 +786,31 @@ p {
   padding-top: 60px;
   padding-bottom: 40px;
   background-color: var(--third-background-color);
+  background-repeat: no-repeat;
+  background-size: auto auto;
+}
+@media (min-width: 1200px) {
+  .about .about {
+    background-image: url(../images/about/section-aboutbg.jpg);
+  }
+}
+@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx) {
+  .about .about {
+    background-image: url(../images/about/bg\ @2x-min.jpg);
+  }
+}
+@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 3), (min-width: 1200px) and (min-resolution: 3dppx) {
+  .about .about {
+    background-image: url(../images/about/bg@3x-min.jpg);
+  }
+}
+
+.text {
+  background-repeat: no-repeat;
+  background-size: auto auto;
 }
 @media screen and (min-width: 320px) {
-  .about {
+  .text {
     background-image: url(../images/about/bg\ mob-min.jpg);
     padding-bottom: 60px;
   }
@@ -804,28 +826,6 @@ p {
     background-image: url(../images/about/bg\ mob@3x-min.jpg);
   }
 }
-@media (min-width: 1200px) {
-  .about {
-    background-image: url(../images/about/section-aboutbg.jpg);
-  }
-}
-@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx) {
-  .about {
-    background-image: url(../images/about/bg\ @2x-min.jpg);
-  }
-}
-@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 3), (min-width: 1200px) and (min-resolution: 3dppx) {
-  .about {
-    background-image: url(../images/about/bg@3x-min.jpg);
-  }
-}
-@media screen and (min-width: 320px) {
-  .text {
-    background-image: url(../images/about/section-aboutbg.jpg);
-    padding-bottom: 60px;
-  }
-}
-
 .about__title {
   margin-bottom: 15px;
   font-family: "Titan One";

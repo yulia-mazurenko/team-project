@@ -2,6 +2,8 @@
     padding-top: 60px;
     padding-bottom: 40px;
     background-color: var(--third-background-color);
+    background-repeat: no-repeat;
+    background-size: auto auto;
 
     @media (min-width: $desktop) {
         .about {
@@ -23,6 +25,9 @@
 }
 
 .text {
+    background-repeat: no-repeat;
+    background-size: auto auto;
+
     @media screen and (min-width: $mobile) {
         background-image: url(../images/about/bg\ mob-min.jpg);
         padding-bottom: 60px;
