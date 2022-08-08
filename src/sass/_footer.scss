@@ -1,6 +1,9 @@
 .footer {
   background: var(--light-pink-background-color);
 
+  &__title {
+    margin-bottom: 40px;
+  }
   &__title--top {
     font-family: 'Titan One';
     font-style: normal;
@@ -39,10 +42,49 @@
   height: 32px;
   border-radius: 50%;
   background: #fea5bb;
-  display: block;
+  color: var(--main-text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background var(--animation-timing-function);
+}
+
+.social__link:hover,
+.social__link:focus {
+  background: var(--secondary-text-color);
 }
 
 .social__list {
   @extend %list;
   display: flex;
+  gap: 28px;
+  justify-content: flex-end;
+  margin-bottom: 40px;
+}
+
+.social__icon {
+  fill: currentColor;
+}
+
+.footer-tel-txt {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: calc(22 / 12);
+
+  text-align: right;
+
+  color: #000000;
+}
+
+.footer-tel {
+  @extend %link;
+  color: var(--secondary-text-color);
+}
+
+.sub-footer__txt {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(21 / 14);
+  text-align: center;
+  color: var(--description-text-color);
 }
