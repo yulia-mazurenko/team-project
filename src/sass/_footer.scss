@@ -34,9 +34,15 @@
 }
 
 .social__link {
+  @extend %link;
   width: 32px;
   height: 32px;
   border-radius: 50%;
   background: #fea5bb;
   display: block;
+}
+
+.social__list {
+  @extend %list;
+  display: flex;
 }
