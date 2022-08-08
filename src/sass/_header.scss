@@ -106,22 +106,21 @@ transition: transform var(--animation-timing-function);
 .page-header__wrapper {
     position: relative;
     z-index: 999;
+    height: 100vw;
     
     @media screen and (max-width: 320px) {
         width: 100%;
     }
 
     @media screen and (min-width: $mobile) and (max-width: 767px) {
-        width: 250px;
-        height: 502px;
+        width: 250px;       
 
         padding-top: 60px;
             }
 
     @media screen and (min-width: $tablet) and (max-width: 1199px) {
         width: 254px;
-        height: 1020px;
-
+      
         padding-top: 58px;        
     }
 
