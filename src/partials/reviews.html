@@ -1,0 +1,71 @@
+<link rel="stylesheet" type="text/scss" href="/src/sass/_reviews.scss"/>
+<link rel="stylesheet" type="text/scss" href="/src/slick/slick.scss"/>
+<link rel="stylesheet" type="text/scss" href="/src/slick/slick-theme.scss"/>
+    <section class="slider" id="reviews">
+        <div class="slick-slide">
+            <img class="slider__img" srcset="\src\images\reviews\emily.png 1x,\src\images\reviews\emily@2x.png 2x,\src\images\reviews\emily@3x.png 3x" src="\src\images\reviews\emily.png" alt="Emily">          
+            <div class="slider__box">
+                <div class="slider__wrapper">
+                    <p class="slider__text">
+                        Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+                    </p>
+                </div>
+                <p class="slider__header">
+                    Emily, Los Angeles
+                </p>
+                <svg class="slider__emily-home slider__icon">
+                    <use href="/images/icons.svg#home-icon"></use>
+                </svg>
+            </div>
+        </div>
+        <div class="slick-slide">
+            <img class="slider__img" srcset="\src\images\reviews\kate.png 1x,\src\images\reviews\kate@2x.png 2x,\src\images\reviews\kate@3x.png 3x" src="\src\images\reviews\kate.png" alt="Kate"> 
+            <div class="slider__box">
+                <div class="slider__wrapper">
+                    <p class="slider__text">
+                        Nunc ornare egestas turpis mollis mollis. Quisque et quam tortor. Vestibulum auctor, erat vel mollis iaculis, quam enim mollis magna, at euismod orci dolor nec ante.
+                    </p>
+                </div>
+                <p class="slider__header">
+                    Kate, New York
+                </p>
+                <svg class="slider__kate-home slider__icon">
+                    <use href="/images/icons.svg#home-icon"></use>
+                </svg>
+            </div>      
+        </div>
+        <div class="slick-slide">
+            <img class="slider__img" srcset="\src\images\reviews\jessica.png 1x,\src\images\reviews\jessica@2x.png 2x,\src\images\reviews\jessica@3x.png 3x" src="\src\images\reviews\jessica.png" alt="Jessica">    
+            <div class="slider__box">
+                <div class="slider__wrapper">
+                    <p class="slider__text">
+                        Mauris et tempor nibh. Cras varius, eros vel ultricies feugiat, metus dolor pharetra orci, eu rutrum nisl ligula sed ipsum. Fusce ac luctus risus, ut dolor nec vehicula mi.
+                    </p>
+                </div>
+                <p class="slider__header">
+                    Jessica, Chicago
+                </p>
+                <svg class="slider__jessica-home slider__icon">
+                    <use href="/images/icons.svg#home-icon"></use>
+                </svg>
+            </div>   
+        </div>
+    </section>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.min.js"></script>
+    <script type="text/javascript" src="/src/slick/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+        $('.slider').slick({
+        dots: true,
+        infinite: false,
+        adaptiveHeight: true,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });
+});
+    </script>
+</body>
+</html>
