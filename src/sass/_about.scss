@@ -4,21 +4,28 @@
     background-color: var(--third-background-color);
     background-repeat: no-repeat;
     background-size: auto auto;
+    position: relative;
 
     @media (min-width: $desktop) {
         .about {
+            position: absolute;
             background-image: url(../images/about/section-aboutbg.jpg);
+            background-color: var(--third-background-color);
         }
     
         @media (min-resolution: 2dppx) {
             .about {
-                    background-image: url(../images/about/bg\ @2x-min.jpg);
+                position: absolute;
+                background-image: url(../images/about/bg\ @2x-min.jpg);
+                background-color: var(--third-background-color);
             }
         }
     
         @media (min-resolution: 3dppx) {
             .about {
+                position: absolute;
                 background-image: url(../images/about/bg@3x-min.jpg);
+                background-color: var(--third-background-color);
             }
         }
     }
@@ -30,6 +37,7 @@
 
     @media screen and (min-width: $mobile) {
         background-image: url(../images/about/bg\ mob-min.jpg);
+        background-color: var(--third-background-color);
         padding-bottom: 60px;
     }
 }
@@ -37,12 +45,14 @@
 @media (min-resolution: 2dppx) {
     .about {
         background-image: url(../images/about/bg\ mob@2x-min.jpg);
+        background-color: var(--third-background-color);
     }
 }
 
 @media (min-resolution: 3dppx) {
     .about {
         background-image: url(../images/about/bg\ mob@3x-min.jpg);
+        background-color: var(--third-background-color);
     }
 }
 
