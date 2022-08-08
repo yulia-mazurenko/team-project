@@ -4,18 +4,17 @@
     background-color: var(--third-background-color);
     background-repeat: no-repeat;
     background-size: auto auto;
-    position: relative;
+    background-position: center;
+    
 
     @media (min-width: $desktop) {
         .about {
-            position: absolute;
             background-image: url(../images/about/section-aboutbg.jpg);
             background-color: var(--third-background-color);
         }
     
         @media (min-resolution: 2dppx) {
             .about {
-                position: absolute;
                 background-image: url(../images/about/bg\ @2x-min.jpg);
                 background-color: var(--third-background-color);
             }
@@ -23,7 +22,6 @@
     
         @media (min-resolution: 3dppx) {
             .about {
-                position: absolute;
                 background-image: url(../images/about/bg@3x-min.jpg);
                 background-color: var(--third-background-color);
             }
@@ -31,9 +29,11 @@
     }
 }
 
+
 .text {
     background-repeat: no-repeat;
     background-size: auto auto;
+    background-position: center;
 
     @media screen and (min-width: $mobile) {
         background-image: url(../images/about/bg\ mob-min.jpg);
