@@ -1,10 +1,11 @@
 .gallery__container {
-    @extend %section;
+    height: 327px;
     background: linear-gradient(to bottom, #fff5f6 0%, #fff5f6 19%, #ffffff 19%, #ffffff 100%);
 
 }
 
 .gallery__list {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
