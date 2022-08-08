@@ -782,19 +782,27 @@ p {
   fill: var(--secondary-text-color);
 }
 
+.about {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  background-color: var(--third-background-color);
+}
 @media screen and (min-width: 1200px) {
   .about {
-    background-image: url(./images/about/section-aboutbg.jpg);
+    background-image: url(../images/about/section-aboutbg.jpg);
+    padding-bottom: 60px;
   }
 }
 
 @media screen and (min-width: 320px) {
   .text {
-    background-image: url(./images/about/section-aboutbg.jpg);
+    background-image: url(../images/about/section-aboutbg.jpg);
+    padding-bottom: 60px;
   }
 }
 
 .about__title {
+  margin-bottom: 15px;
   font-family: "Titan One";
   font-style: normal;
   font-weight: 400;
@@ -806,6 +814,7 @@ p {
 }
 
 .about__caption {
+  margin-bottom: 32px;
   font-family: "Titan One";
   font-style: normal;
   font-weight: 400;
@@ -818,6 +827,8 @@ p {
 }
 
 .about__main-text {
+  margin-top: 40px;
+  margin-bottom: 40px;
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 500;
@@ -827,6 +838,7 @@ p {
 }
 
 .about__text {
+  white-space: pre-wrap;
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 500;

@@ -1,16 +1,24 @@
 .about {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    background-color: var(--third-background-color);
+
     @media screen and (min-width: $desktop) {
-        background-image: url(./images/about/section-aboutbg.jpg);  
+        background-image: url(../images/about/section-aboutbg.jpg); 
+        padding-bottom: 60px; 
     } 
 }
 
 .text {
     @media screen and (min-width: $mobile) {
-        background-image: url(./images/about/section-aboutbg.jpg);
+        background-image: url(../images/about/section-aboutbg.jpg);
+        padding-bottom: 60px;
     }
 }
 
 .about__title {
+    margin-bottom: 15px;
+
     font-family: 'Titan One';
     font-style: normal;
     font-weight: 400;
@@ -23,6 +31,8 @@
 }
 
 .about__caption {
+    margin-bottom: 32px;
+
     font-family: 'Titan One';
     font-style: normal;
     font-weight: 400;
@@ -36,6 +46,9 @@
 }
 
 .about__main-text {
+    margin-top: 40px;
+    margin-bottom: 40px;
+
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 500;
@@ -46,6 +59,8 @@
 }
 
 .about__text {
+    white-space: pre-wrap;
+
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 500;
