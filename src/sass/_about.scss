@@ -10,20 +10,17 @@
     @media (min-width: $desktop) {
         .about {
             background-image: url(../images/about/bg-min.png);
-            background-color: var(--third-background-color);
         }
     
         @media (min-resolution: 2dppx) {
             .about {
                 background-image: url(../images/about/bg@2x-min.png);
-                background-color: var(--third-background-color);
             }
         }
     
         @media (min-resolution: 3dppx) {
             .about {
                 background-image: url(../images/about/bg@3x-min.png);
-                background-color: var(--third-background-color);
             }
         }
     }
@@ -35,9 +32,8 @@
     background-size: auto auto;
     background-position: center;
 
-    @media screen and (min-width: $mobile) {
+    @media screen and (max-width: $tablet) {
         background-image: url(../images/about/mob-bg-min.png);
-        background-color: var(--third-background-color);
         padding-bottom: 60px;
     }
 }
@@ -45,14 +41,12 @@
 @media (min-resolution: 2dppx) {
     .about {
         background-image: url(../images/about/mob-bg@2x-min.png);
-        background-color: var(--third-background-color);
     }
 }
 
 @media (min-resolution: 3dppx) {
     .about {
         background-image: url(../images/about/mob-bg@3x-min.png);
-        background-color: var(--third-background-color);
     }
 }
 
