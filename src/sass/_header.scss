@@ -106,7 +106,7 @@ transition: transform var(--animation-timing-function);
 .page-header__wrapper {
     position: relative;
     z-index: 999;
-    height: 100vw;
+   
     
     @media screen and (max-width: 320px) {
         width: 100%;
@@ -126,6 +126,7 @@ transition: transform var(--animation-timing-function);
 
     @media screen and (max-width: 1199px) {
         position: absolute;
+        height: 100vw;
 
         display: flex;
         flex-direction: column-reverse;

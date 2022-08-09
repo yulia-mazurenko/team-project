@@ -274,48 +274,49 @@ p {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: transparent;
+  border: none;
   background: var(--main-background-color);
 }
 .products__icon {
-  width: 15px;
-  height: 15px;
+  width: 40px;
+  height: 40px;
   fill: var(--secondary-text-color);
 }
-.products__tooltip {
-  width: 550%;
-  height: 251%;
-  visibility: hidden;
+.products__thumb {
+  //   position: relative;
+  overflow: hidden;
+}
+.products__action {
   opacity: 0;
-  background-color: var(--third-background-color);
-  border: 1px solid var(--secondary-text-color);
-  border-radius: 20px;
-  padding: 3px;
-  transition: visibility 0.25s, opacity 0.25s, transform 0.25s;
-  display: inline-block;
+  width: 83%;
+  height: 34%;
+  border: 1px solid;
+  border-radius: 21px;
   position: absolute;
-  top: -305%;
-  left: -220%;
-  transform: scale(1);
+  bottom: 84px;
+  left: 25px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.products__tooltip-text {
-  color: var(--secondary-text-color);
-  font-family: 'Titan One';
-  font-size: 10px;
+.products__action--cream {
+  color: var(--secondary-background-color);
+  border-color: var(--secondary-background-color);
+  background: var(--third-background-color);
 }
-.products__button:hover .products__tooltip,
-.products__button:focus .products__tooltip {
-  visibility: visible;
+.products__action--coffee {
+  color: var(--beige-background-color);
+  border-color: var(--beige-background-color);
+  background: var(--third-background-color);
+}
+.products__action--milkshakes {
+  color: var(--green-background-color);
+  border-color: var(--green-background-color);
+  background: var(--third-background-color);
+}
+.products__button:hover .products__action {
   opacity: 1;
-  transform: scale(1.1);
-}
-.products__tooltip:after {
-  content: '';
-  border: 10px solid rgba(0, 0, 0, 0);
-  border-top-color: var(--third-background-color);
-  margin-left: -1px;
-  position: absolute;
-  top: 99%;
-  left: 50%;
-  transform: translate(-50%);
 }

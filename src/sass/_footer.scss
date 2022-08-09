@@ -3,6 +3,15 @@
 
   &__title {
     margin-bottom: 40px;
+    width: 234px;
+
+    @media screen and (min-width: $tablet) {
+      width: 340px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 480px;
+    }
   }
   &__title--top {
     font-family: 'Titan One';
@@ -11,13 +20,24 @@
     font-size: 18px;
     line-height: calc(21 / 18);
     text-transform: uppercase;
-
+    letter-spacing: 00.04em;
     color: var(--third-text-color);
     display: block;
 
-    width: 232px;
-
     margin-bottom: 16px;
+
+    @media screen and (min-width: $tablet) {
+      font-size: 26px;
+      line-height: calc(30 / 26);
+
+      margin-bottom: 12px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 30px;
+      line-height: calc(34 / 30);
+      margin-bottom: 16px;
+    }
   }
 
   &__title--bottom {
@@ -32,7 +52,20 @@
     color: var(--secondary-text-color);
     display: block;
 
-    width: 200px;
+    @media screen and (min-width: $tablet) {
+      font-size: 48px;
+      line-height: calc(55 / 48);
+      letter-spacing: 0.06em;
+      margin-bottom: 12px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 58px;
+      line-height: calc(66 / 58);
+      margin-bottom: 16px;
+
+      width: 100%;
+    }
   }
 }
 
@@ -60,6 +93,10 @@
   gap: 28px;
   justify-content: flex-end;
   margin-bottom: 40px;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 60px;
+  }
 }
 
 .social__icon {
@@ -74,6 +111,17 @@
   text-align: right;
 
   color: #000000;
+  padding-bottom: 40px;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+    line-height: calc(26 / 14);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+  }
 }
 
 .footer-tel {
@@ -81,10 +129,36 @@
   color: var(--secondary-text-color);
 }
 
-.sub-footer__txt {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: calc(21 / 14);
-  text-align: center;
-  color: var(--description-text-color);
+.sub-footer {
+  padding-top: 16px;
+  padding-bottom: 3px;
+  border-top: 1px solid #e1e1e1;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 8px;
+  }
+
+  &__txt {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(21 / 14);
+    text-align: center;
+    max-width: 150px;
+    color: var(--description-text-color);
+    margin-right: auto;
+    margin-left: auto;
+
+    @media screen and (min-width: $tablet) {
+      line-height: calc(26 / 14);
+
+      max-width: 100%;
+    }
+  }
+}
+
+.footer-info {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
