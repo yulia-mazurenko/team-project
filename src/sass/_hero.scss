@@ -15,16 +15,17 @@
 .hero__container {
   position: relative;
   padding-top: 194px;
-
   width: 320px;
+  height: 502px;
+  overflow: hidden;
+
   @media screen and (min-width: $tablet) {
     width: 768px;
     padding-top: 104px;
-
   }
   @media screen and (min-width: $desktop) {
-width: 1200px;
-padding-top: 147px;
+    width: 1200px;
+    padding-top: 147px;
   }
 }
 // Big round image - Start
@@ -37,6 +38,7 @@ padding-top: 147px;
   height: 344px;
   border-radius: 50%;
   background-color: var(--third-text-color);
+  overflow: hidden;
 
   @media screen and (min-width: $tablet) {
     width: 335px;
@@ -51,6 +53,38 @@ padding-top: 147px;
     left: 516px;
   }
 }
+// .hero__round {
+//   position: absolute;
+//   top: 43px;
+//   left: 248px;
+//   width: 335px;
+//   height: 333px;
+//   border-radius: 50%;
+//   background-color: var(--third-text-color);
+
+//   @media screen and (max-width: 767px) {
+//     display: none;
+//   }
+//   @media screen and (min-width: $desktop) {
+//     width: 534px;
+//     height: 534px;
+//     top: 54px;
+//     left: 516px;
+//   }
+// }
+// .hero__round-mob {
+//   position: absolute;
+//   top: 83px;
+//   left: 36px;
+//   width: 286px;
+//   height: 344px;
+//   background-image: url(../images/hero/Hero__round.png);
+
+//   @media screen and (min-width: $tablet) {
+//     display: none;
+//   }
+// }
+
 // Big round image - End
 
 // Ice-cream image - Start
@@ -246,23 +280,22 @@ padding-top: 147px;
 
   &::after {
     display: block;
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     right: 0;
-  
+
     width: 16px;
     height: 16px;
     border-radius: 50%;
     background-color: var(--main-text-color);
-  
+
     @media screen and (min-width: $desktop) {
       width: 30px;
       height: 30px;
     }
   }
 }
-
 
 .hero__wrapper-23 {
   position: relative;
@@ -276,23 +309,22 @@ padding-top: 147px;
 
   &::after {
     display: block;
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     right: 0;
-  
+
     width: 16px;
     height: 16px;
     border-radius: 50%;
     background-color: var(--main-text-color);
-  
+
     @media screen and (min-width: $desktop) {
       width: 30px;
       height: 30px;
     }
   }
 }
-
 
 .hero__number {
   position: relative;
@@ -317,9 +349,9 @@ padding-top: 147px;
 }
 
 .hero__number-23 {
-text-align: center;
+  text-align: center;
 }
-  
+
 .hero__number-desc {
   display: block;
   font-family: 'DM Sans';
@@ -337,7 +369,6 @@ text-align: center;
 }
 .cafes {
   text-align: center;
-
 }
 // H1 - Start
 
@@ -422,8 +453,14 @@ text-align: center;
   @media screen and (min-width: $desktop) {
     height: 40px;
   }
- &:hover, &:focus {
-background-color: #ECEBEB;
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+    color: var(--secondary-text-color);
+    box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 8%),
+      0px 2px 2px rgb(0 0 0 / 12%);
+    transform: scale(1.1);
+    transition: transform var(--animation-timing-function);
   }
 }
 .hero__item-products {
@@ -492,7 +529,6 @@ background-color: #ECEBEB;
     line-height: calc(20 / 14);
     margin-left: 213px;
     margin-bottom: 20px;
-
   }
 }
 
@@ -508,7 +544,7 @@ background-color: #ECEBEB;
   border-radius: 50%;
   border: 0;
   background-color: transparent;
-  background-image: url("../images/hero/hero__arrow-right.png");
+  background-image: url('../images/hero/hero__arrow-right.png');
   background-size: cover;
 
   @media screen and (max-width: 767px) {
@@ -516,8 +552,16 @@ background-color: #ECEBEB;
   }
 
   @media screen and (min-width: $desktop) {
-width: 26px;
-height: 26px;
-margin-left: 213px;
-}
+    width: 26px;
+    height: 26px;
+    margin-left: 213px;
+  }
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+    box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 8%),
+      0px 2px 2px rgb(0 0 0 / 12%);
+    transform: scale(1.1);
+    transition: transform var(--animation-timing-function);
+  }
 }
