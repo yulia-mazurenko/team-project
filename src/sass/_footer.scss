@@ -11,6 +11,7 @@
 
     @media screen and (min-width: 1200px) {
       width: 480px;
+      margin-bottom: 60px;
     }
   }
   &__title--top {
@@ -35,7 +36,7 @@
 
     @media screen and (min-width: 1200px) {
       font-size: 30px;
-      line-height: calc(34 / 30);
+      line-height: calc(36 / 30);
       margin-bottom: 16px;
     }
   }
@@ -56,15 +57,11 @@
       font-size: 48px;
       line-height: calc(55 / 48);
       letter-spacing: 0.06em;
-      margin-bottom: 12px;
     }
 
     @media screen and (min-width: 1200px) {
       font-size: 58px;
       line-height: calc(66 / 58);
-      margin-bottom: 16px;
-
-      width: 100%;
     }
   }
 }
@@ -79,12 +76,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background var(--animation-timing-function);
+  transition: background var(--animation-timing-function),
+    width var(--animation-timing-function),
+    height var(--animation-timing-function);
 }
 
 .social__link:hover,
 .social__link:focus {
   background: var(--secondary-text-color);
+  width: 37px;
+  height: 37px;
 }
 
 .social__list {
@@ -92,15 +93,23 @@
   display: flex;
   gap: 28px;
   justify-content: flex-end;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
 
   @media screen and (min-width: $tablet) {
     padding-top: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 13px;
   }
 }
 
 .social__icon {
   fill: currentColor;
+}
+
+.social__item {
+  height: 37px;
 }
 
 .footer-tel-txt {
