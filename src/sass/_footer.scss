@@ -148,7 +148,7 @@
     margin-right: auto;
     margin-left: auto;
 
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: 768px) {
       line-height: calc(26 / 14);
 
       max-width: 100%;
