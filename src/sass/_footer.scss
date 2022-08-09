@@ -77,15 +77,13 @@
   justify-content: center;
   align-items: center;
   transition: background var(--animation-timing-function),
-    width var(--animation-timing-function),
-    height var(--animation-timing-function);
+    transform var(--animation-timing-function);
 }
 
 .social__link:hover,
 .social__link:focus {
   background: var(--secondary-text-color);
-  width: 37px;
-  height: 37px;
+  transform: scale(1.2);
 }
 
 .social__list {
@@ -106,10 +104,6 @@
 
 .social__icon {
   fill: currentColor;
-}
-
-.social__item {
-  height: 37px;
 }
 
 .footer-tel-txt {
