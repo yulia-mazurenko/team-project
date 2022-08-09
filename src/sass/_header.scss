@@ -113,7 +113,7 @@ transition: transform var(--animation-timing-function);
     }
 
     @media screen and (min-width: $mobile) and (max-width: 767px) {
-        width: 250px;       
+        width: 250px;      
 
         padding-top: 60px;
             }
@@ -121,7 +121,7 @@ transition: transform var(--animation-timing-function);
     @media screen and (min-width: $tablet) and (max-width: 1199px) {
         width: 254px;
       
-        padding-top: 58px;        
+        padding-top: 60px;        
     }
 
     @media screen and (max-width: 1199px) {
@@ -158,6 +158,7 @@ transition: transform var(--animation-timing-function);
 }
 
 .page-header__button {
+
     @extend %button;  
     z-index: 998;
     
@@ -234,18 +235,8 @@ transition: transform var(--animation-timing-function);
     }
 }
 
-.page-header__wrapper.is-open ~ .burger-menu {
-
-    @media screen and (min-width: $tablet) {
-        z-index: 9999;
-        position: absolute;
-        top: 20px;
-        right: 32px;
-    }
-   }
-
 .burger-menu {
-    z-index: 9999;
+    z-index: 99;
     margin: 0;
     padding: 0;
     display: flex;
@@ -253,18 +244,7 @@ transition: transform var(--animation-timing-function);
     justify-content: center;
     border: none;
    
-    background-color: transparent;
-
-    &__icon-close {
-        display: none;
-    }
-    &.is-open .burger-menu__icon-close {
-        display: block;
-    }
-
-    &.is-open .burger-menu__icon-burger {
-        display: none;
-    }
+    background-color: transparent;   
 
 @media screen and (min-width: $tablet) {
     position: absolute;
@@ -274,19 +254,30 @@ transition: transform var(--animation-timing-function);
 
     @media screen and (min-width: $desktop) {
         display: none;
+    }   
+}
+
+.button-close {
+
+    z-index: 9999;
+position: absolute;
+top: 20px;
+right: 20px;
+
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+
+    background-color: transparent;
+
+    @media screen and (min-width: $desktop) {
+        display: none;
     }
-   
 }
 
-.burger-menu__icon-close {
-    width: 14px;
-    height: 14px;
-}
-
-.burger-menu__icon-burger {
-    width: 20px;
-    height: 12px;
-}
 
 
 
