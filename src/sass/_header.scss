@@ -125,8 +125,8 @@ transition: transform var(--animation-timing-function);
     }
 
     @media screen and (max-width: 1199px) {
-        position: absolute;
-        height: 100vw;
+        position: fixed;
+        height: 100%;
 
         display: flex;
         flex-direction: column-reverse;
