@@ -2,22 +2,31 @@
   background-color: var(--secondary-background-color);
   height: 502px;
   width: 100%;
-  padding-top: 194px;
-  padding-left: 20px;
 
   @media screen and (min-width: $tablet) {
     height: 416px;
-    padding-top: 102px;
-    padding-left: 32px;
   }
 
   @media screen and (min-width: $desktop) {
     height: 664px;
-    padding-top: 147px;
-    padding-left: 17px;
   }
 }
 
+.hero__container {
+  position: relative;
+  padding-top: 194px;
+
+  width: 320px;
+  @media screen and (min-width: $tablet) {
+    width: 768px;
+    padding-top: 104px;
+
+  }
+  @media screen and (min-width: $desktop) {
+width: 1200px;
+padding-top: 147px;
+  }
+}
 // Big round image - Start
 
 .hero__round {
@@ -414,7 +423,7 @@ text-align: center;
     height: 40px;
   }
  &:hover, &:focus {
-background-color: transparent;
+background-color: #ECEBEB;
   }
 }
 .hero__item-products {
