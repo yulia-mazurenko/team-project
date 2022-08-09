@@ -31,6 +31,7 @@
     }
     &__item{
         @extend %list;
+
     }
     &__item:last-child{
 
@@ -53,8 +54,18 @@
         @media screen and(min-width: $desktop) {
             margin-bottom: 40px;
         }
+
     }
- 
+    &__item.first:hover &__icon,
+    &__item.second:hover &__icon,
+    &__item.third:hover &__icon{
+        animation-name: shaking;
+        animation-duration: 1.2s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-delay: 250ms;
+
+    }
 
     &__caption{
     font-family: 'Titan One';
@@ -77,12 +88,6 @@
         margin-bottom: 16px;
     }
     }
-
-
-
-
-
-
 
     &__phrase{
     font-family: 'DM Sans';
@@ -117,3 +122,4 @@
         margin-bottom: 0;
     }
 }
+
