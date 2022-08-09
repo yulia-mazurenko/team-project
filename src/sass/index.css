@@ -789,33 +789,7 @@ p {
   background-repeat: no-repeat;
   background-size: auto auto;
   background-position: center;
-}
-@media (min-width: 1200px) {
-  .about .about {
-    background-image: url(../images/about/bg-min.png);
-  }
-}
-@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx) {
-  .about .about {
-    background-image: url(../images/about/bg@2x-min.png);
-  }
-}
-@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 3), (min-width: 1200px) and (min-resolution: 3dppx) {
-  .about .about {
-    background-image: url(../images/about/bg@3x-min.png);
-  }
-}
-
-.text {
-  background-repeat: no-repeat;
-  background-size: auto auto;
-  background-position: center;
-}
-@media screen and (max-width: 768px) {
-  .text {
-    background-image: url(../images/about/mob-bg-min.png);
-    padding-bottom: 60px;
-  }
+  background-image: url(../images/about/mob-bg-min.png);
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
@@ -828,6 +802,32 @@ p {
     background-image: url(../images/about/mob-bg@3x-min.png);
   }
 }
+@media (min-width: 768px) {
+  .hero {
+    background-image: none;
+  }
+}
+@media (min-width: 1200px) {
+  .about {
+    background-image: url(../images/about/bg-min.png);
+  }
+}
+@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx) {
+  .about {
+    background-image: url(../images/about/bg@2x-min.png);
+  }
+}
+@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 3), (min-width: 1200px) and (min-resolution: 3dppx) {
+  .about {
+    background-image: url(../images/about/bg@3x-min.png);
+  }
+}
+.text {
+  background-repeat: no-repeat;
+  background-size: auto auto;
+  background-position: center;
+}
+
 .about__title {
   margin-bottom: 15px;
   font-family: "Titan One";
@@ -860,12 +860,11 @@ p {
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
-  line-height: 1.5;
+  line-height: 1.62;
   color: var(--paragraph-text-color);
 }
 
 .about__text {
-  white-space: pre-wrap;
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 500;

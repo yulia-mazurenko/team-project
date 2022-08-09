@@ -5,49 +5,48 @@
     background-repeat: no-repeat;
     background-size: auto auto;
     background-position: center;
-    
 
-    @media (min-width: $desktop) {
-        .about {
-            background-image: url(../images/about/bg-min.png);
-        }
-    
-        @media (min-resolution: 2dppx) {
-            .about {
-                background-image: url(../images/about/bg@2x-min.png);
-            }
-        }
-    
-        @media (min-resolution: 3dppx) {
-            .about {
-                background-image: url(../images/about/bg@3x-min.png);
-            }
-        }
+    background-image: url(../images/about/mob-bg-min.png);
+}
+
+@media (min-resolution: 2dppx) {
+    .about {
+    background-image: url(../images/about/mob-bg@2x-min.png);
+}}
+
+ @media (min-resolution: 3dppx) {
+    .about {
+     background-image: url(../images/about/mob-bg@3x-min.png);
+ }}
+
+ @media (min-width: $tablet) {
+    .hero {
+        background-image: none;
     }
 }
 
+@media (min-width: $desktop) {
+    .about {
+        background-image: url(../images/about/bg-min.png);
+    }
+
+    @media (min-resolution: 2dppx) {
+        .about {
+            background-image: url(../images/about/bg@2x-min.png);
+        }
+    }
+
+    @media (min-resolution: 3dppx) {
+        .about {
+            background-image: url(../images/about/bg@3x-min.png);
+        }
+    }
+}
 
 .text {
     background-repeat: no-repeat;
     background-size: auto auto;
     background-position: center;
-
-    @media screen and (max-width: $tablet) {
-        background-image: url(../images/about/mob-bg-min.png);
-        padding-bottom: 60px;
-    }
-}
-
-@media (min-resolution: 2dppx) {
-    .about {
-        background-image: url(../images/about/mob-bg@2x-min.png);
-    }
-}
-
-@media (min-resolution: 3dppx) {
-    .about {
-        background-image: url(../images/about/mob-bg@3x-min.png);
-    }
 }
 
 .about__title {
@@ -87,13 +86,13 @@
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
-    line-height: 1.5;
+    line-height: 1.62;
 
     color: var(--paragraph-text-color);
 }
 
 .about__text {
-    white-space: pre-wrap;
+    
 
     font-family: 'DM Sans';
     font-style: normal;
