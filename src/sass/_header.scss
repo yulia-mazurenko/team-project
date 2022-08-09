@@ -159,6 +159,7 @@ transition: transform var(--animation-timing-function);
 
 .page-header__button {
     @extend %button;  
+    z-index: 998;
     
     transition: background-color var(--animation-timing-function);
     transition: transform var(--animation-timing-function);
