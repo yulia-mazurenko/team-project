@@ -793,32 +793,32 @@ p {
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .about {
     background-position: right 20px bottom 200px;
-    background-image: url(./images/about/mob-bg-min.png);
+    background-image: url(../images/about/mob-bg-min.png);
   }
 }
 @media screen and (min-width: 320px) and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 320px) and (max-width: 768px) and (min-resolution: 2dppx) {
   .about {
-    background-image: url(./images/about/mob-bg@2x-min.png);
+    background-image: url(../images/about/mob-bg@2x-min.png);
   }
 }
 @media screen and (min-width: 320px) and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 320px) and (max-width: 768px) and (min-resolution: 3dppx) {
   .about {
-    background-image: url(./images/about/mob-bg@3x-min.png);
+    background-image: url(../images/about/mob-bg@3x-min.png);
   }
 }
 @media (min-width: 1200px) {
   .about {
-    background-image: url(./images/about/bg-min.png);
+    background-image: url(../images/about/bg-min.png);
   }
 }
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx) {
   .about {
-    background-image: url(./images/about/bg@2x-min.png);
+    background-image: url(../images/about/bg@2x-min.png);
   }
 }
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 3), (min-width: 1200px) and (min-resolution: 3dppx) {
   .about {
-    background-image: url(./images/about/bg@3x-min.png);
+    background-image: url(../images/about/bg@3x-min.png);
   }
 }
 @media (min-width: 768px) {

@@ -9,34 +9,34 @@
 @media screen and (min-width: $mobile) and (max-width: $tablet) {
     .about {
         background-position: right 20px bottom 200px;
-        background-image: url(./images/about/mob-bg-min.png);
+        background-image: url(../images/about/mob-bg-min.png);
     }
 
     @media (min-resolution: 2dppx) {
         .about {
-        background-image: url(./images/about/mob-bg@2x-min.png);
+        background-image: url(../images/about/mob-bg@2x-min.png);
     }}
 
  @media (min-resolution: 3dppx) {
     .about {
-     background-image: url(./images/about/mob-bg@3x-min.png);
+     background-image: url(../images/about/mob-bg@3x-min.png);
  }}
 }
 
 @media (min-width: $desktop) {
     .about {
-        background-image: url(./images/about/bg-min.png);
+        background-image: url(../images/about/bg-min.png);
     }
 
     @media (min-resolution: 2dppx) {
         .about {
-            background-image: url(./images/about/bg@2x-min.png);
+            background-image: url(../images/about/bg@2x-min.png);
         }
     }
 
     @media (min-resolution: 3dppx) {
         .about {
-            background-image: url(./images/about/bg@3x-min.png);
+            background-image: url(../images/about/bg@3x-min.png);
         }
     }
 }
