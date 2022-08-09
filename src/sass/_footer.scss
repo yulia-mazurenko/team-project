@@ -1,6 +1,19 @@
 .footer {
   background: var(--light-pink-background-color);
 
+  &__title {
+    margin-bottom: 40px;
+    width: 234px;
+
+    @media screen and (min-width: $tablet) {
+      width: 340px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 480px;
+      margin-bottom: 60px;
+    }
+  }
   &__title--top {
     font-family: 'Titan One';
     font-style: normal;
@@ -8,13 +21,24 @@
     font-size: 18px;
     line-height: calc(21 / 18);
     text-transform: uppercase;
-
+    letter-spacing: 00.04em;
     color: var(--third-text-color);
     display: block;
 
-    width: 232px;
-
     margin-bottom: 16px;
+
+    @media screen and (min-width: $tablet) {
+      font-size: 26px;
+      line-height: calc(30 / 26);
+
+      margin-bottom: 12px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 30px;
+      line-height: calc(36 / 30);
+      margin-bottom: 16px;
+    }
   }
 
   &__title--bottom {
@@ -29,7 +53,16 @@
     color: var(--secondary-text-color);
     display: block;
 
-    width: 200px;
+    @media screen and (min-width: $tablet) {
+      font-size: 48px;
+      line-height: calc(55 / 48);
+      letter-spacing: 0.06em;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 58px;
+      line-height: calc(66 / 58);
+    }
   }
 }
 
@@ -39,10 +72,96 @@
   height: 32px;
   border-radius: 50%;
   background: #fea5bb;
-  display: block;
+  color: var(--main-text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background var(--animation-timing-function),
+    transform var(--animation-timing-function);
+}
+
+.social__link:hover,
+.social__link:focus {
+  background: var(--secondary-text-color);
+  transform: scale(1.2);
 }
 
 .social__list {
   @extend %list;
   display: flex;
+  gap: 28px;
+  justify-content: flex-end;
+  padding-bottom: 40px;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 13px;
+  }
+}
+
+.social__icon {
+  fill: currentColor;
+}
+
+.footer-tel-txt {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: calc(22 / 12);
+
+  text-align: right;
+
+  color: #000000;
+  padding-bottom: 40px;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+    line-height: calc(26 / 14);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+  }
+}
+
+.footer-tel {
+  @extend %link;
+  color: var(--secondary-text-color);
+}
+
+.sub-footer {
+  padding-top: 16px;
+  padding-bottom: 3px;
+  border-top: 1px solid #e1e1e1;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 8px;
+  }
+
+  &__txt {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(21 / 14);
+    text-align: center;
+    max-width: 150px;
+    color: var(--description-text-color);
+    margin-right: auto;
+    margin-left: auto;
+
+    @media screen and (min-width: $tablet) {
+      line-height: calc(26 / 14);
+
+      max-width: 100%;
+    }
+  }
+}
+
+.footer-info {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
