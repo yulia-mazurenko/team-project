@@ -4,21 +4,22 @@
     background-color: var(--third-background-color);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
-@media screen and (min-width: $mobile) and (max-width: $tablet) {
-    .about {
-        background-position: right 20px bottom 200px;
+@media screen and (min-width: $mobile) and (max-width: 767px) {
+    .text {
+        background-position: left 0 top 80px;
         background-image: url(../images/about/mob-bg-min.png);
     }
 
     @media (min-resolution: 2dppx) {
-        .about {
+        .text {
         background-image: url(../images/about/mob-bg@2x-min.png);
     }}
 
  @media (min-resolution: 3dppx) {
-    .about {
+    .text {
      background-image: url(../images/about/mob-bg@3x-min.png);
  }}
 }
@@ -26,17 +27,20 @@
 @media (min-width: $desktop) {
     .about {
         background-image: url(../images/about/bg-min.png);
+        background-size: auto;
     }
 
     @media (min-resolution: 2dppx) {
         .about {
             background-image: url(../images/about/bg@2x-min.png);
+            background-size: auto;
         }
     }
 
     @media (min-resolution: 3dppx) {
         .about {
             background-image: url(../images/about/bg@3x-min.png);
+            background-size: auto;
         }
     }
 }
@@ -53,10 +57,18 @@
 
 .text {
     background-repeat: no-repeat;
-    background-size: auto auto;
-    background-position: center;
+    background-size: auto;
+    padding-right: 80px;
 
     @media (min-width: $tablet) {
+        margin-left: 32px;
+        padding-right: 18px;
+        width: 50%;
+    }
+
+    @media (min-width: $desktop){
+        padding-right: 105px;
+        width: 50%;
         margin-left: 99px;
     }
 }
