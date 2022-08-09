@@ -26,15 +26,9 @@
           </li>
         </ul>
       </nav>
-      <button class="mobile-menu__button">
-        <span class="mobile-menu__button-text">Buy now</span>
-        <svg width="7" height="10">
-          <use href="./images/iconx.svg#icon-arrow-x"></use>
-        </svg>
-      </button>
-    </div>
 
-    <button class="page-header__button">
+
+    <button class="page-header__button" data-modal-buy-nav-open>
       <span class="page-header__button-text">Buy now</span>
       <svg width="7" height="10">
         <use href="./images/iconx.svg#icon-arrow-x"></use>
@@ -62,4 +56,67 @@
       </svg>
     </button>
   </div>
+
+          <!-- Modal Window buy-nav -->
+          <div class="backdrop is-hidden" data-modal-buy-nav>
+            <div class="modal">
+              <button class="modal__close-btn" type="button" data-modal-buy-nav-close>
+                <svg class="icon-close" width="18px" height="18px" fill="red">
+                  <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+              </button>
+      
+              <form class="form">
+                <div class="form__wrapper">
+                  <strong class="form__heading">Ice Cream</strong>
+      
+                  <label class="form__label" for="icecream">
+                    <span class="form__title">Name</span>
+                    <input class="form__input" type="text" name="name" id="icecream" placeholder=" " />
+                    <svg class="form__icon" width="18px" height="18px">
+                      <use href="./images/icons.svg#icon-person"></use>
+                    </svg>
+                  </label>
+      
+                  <label class="form__label" for="telnum">
+                    <span class="form__title">Telephone</span>
+                    <input class="form__input" type="tel" name="tel" id="telnum" placeholder="" />
+                    <svg class="form__icon" width="18px" height="18px">
+                      <use href="./images/icons.svg#icon-phone"></use>
+                    </svg>
+                  </label>
+      
+                  
+                  <label class="form__label" for="commentx">
+                    <span class="form__title">Сomment</span>
+                  </label>
+                  <textarea
+                    class="commentx"
+                    name="commentx"
+                    id="commentx"
+                    rows="8"
+                    placeholder="Type your message here..."
+                  ></textarea>
+      
+                  <label class="form__checkbox">
+                    <input
+                      class="form__checkbox-input visually-hidden"
+                      type="checkbox"
+                      name="user-agreement"
+                    />
+                    <span class="form__checkbox-custom">
+                      <svg class="form__checkbox-icon" width="16px" height="15px">
+                        <use href="./images/icons.svg#icon-check-true"></use>
+                      </svg>
+                    </span>
+                    <span class="form__checkbox-agreement">I agree with the newsletter and accept
+                      <a class="agreement" href=""><span>Terms of an agreement</span></a>
+                    </span>
+                  </label>
+      
+                  <button class="btnz btnz-accent btnz-modal-franchise" type="submit">Send</button>
+                </div>
+              </form>
+            </div>
+          </div>
 </header>
