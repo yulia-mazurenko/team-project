@@ -97,29 +97,28 @@
     line-height: 1.70;
     letter-spacing: 0.02em;
     color: var(--paragraph-text-color);
-
+    margin-bottom: 32px;
     @media screen and (max-width: $mobile){
         max-width: 230px;
-        margin-bottom: 32px;
+
     }
 
     @media screen and(min-width: $tablet) {
         font-size: 14px;
         line-height: 1.74;
+        margin-bottom: 0;
     }
 
     @media screen and(min-width: $desktop) {
         font-size: 16px;
         line-height: 1.76;
+        margin-bottom: 0;
     }
 
     }
 
 }
-
 .phrase-last{
-    @media screen and (max-width: $mobile){
         margin-bottom: 0;
-    }
 }
 
