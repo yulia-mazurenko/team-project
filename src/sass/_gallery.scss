@@ -33,6 +33,11 @@
         grid-row-start: 11;
         grid-row-end: 23;
     }
+
+    @media screen and(min-width: $desktop) {
+    grid-row-start: 15;
+    grid-row-end: 29;
+    }
 }
 
 .gallery__grid>div:nth-child(2) {
@@ -45,6 +50,11 @@
         grid-row-start: 7;
         grid-row-end: 19;
     }
+
+    @media screen and(min-width: $tablet) {
+    grid-row-start: ;
+    grid-row-end: ;
+    }
 }
 
 .gallery__grid>div:nth-child(3) {
@@ -56,6 +66,11 @@
 @media screen and(min-width: $tablet) {
         grid-row-start: 19;
         grid-row-end: 31;
+    }
+
+    @media screen and(min-width: $tablet) {
+    grid-row-start: ;
+    grid-row-end: ;
     }
 }
 
