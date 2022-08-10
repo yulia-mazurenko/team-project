@@ -857,6 +857,7 @@ img {
     height: 40px;
   }
 }
+
 .hero__item:hover, .hero__item:focus {
   background-color: transparent;
 }
@@ -1033,6 +1034,7 @@ p {
     font-size: 48px;
     line-height: 1.15;
   }
+
   .products-list__text {
     max-width: 160px;
   }
@@ -1049,9 +1051,11 @@ p {
   .products-list__item:not(:last-child) {
     margin-right: 32px;
   }
+
   .products-list__text {
     max-width: 241px;
   }
+
 }
 .products-list__item--cream::before {
   content: "";
@@ -1068,6 +1072,7 @@ p {
   background-size: cover;
   background-image: url(../images/prodacts/mob/mobile_ice_cream_1x-min.png);
 }
+
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .products-list__item--cream::before {
     background-image: url(../images/prodacts/mob/mobile_ice_cream_2x-min.png);
@@ -1113,6 +1118,7 @@ p {
   background-size: cover;
   background-image: url(../images/prodacts/mob/mobile_ice_coffee_1x-min.png);
 }
+
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .products-list__item--coffee::before {
     background-image: url(../images/prodacts/mob/mobile_ice_coffee_2x-min.png);
@@ -1158,6 +1164,7 @@ p {
   background-size: cover;
   background-image: url(../images/prodacts/mob/mobile_milkshakes_1x-min.png);
 }
+
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .products-list__item--shakes::before {
     background-image: url(../images/prodacts/mob/mobile_milkshakes_2x-min.png);
@@ -1264,6 +1271,113 @@ p {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  border: transparent;
+  background: var(--main-background-color);
+  bottom: 0;
+}
+
+.prodacts__icon {
+  width: 15px;
+  height: 15px;
+  fill: var(--secondary-text-color);
+}
+
+.gallery__container {
+  padding: 0;
+  background: linear-gradient(to bottom, #fff5f6 0%, #fff5f6 19%, #ffffff 19%, #ffffff 100%);
+}
+
+.gallery__grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 2px;
+}
+@media screen and (min-width: 768px) {
+  .gallery__grid {
+    grid-gap: 6px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery__grid {
+    padding: 40px;
+    width: 368px;
+  }
+}
+
+.gallery__grid > div:nth-child(1) {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 5;
+  grid-row-end: 10;
+}
+@media screen and (min-width: 768px) {
+  .gallery__grid > div:nth-child(1) {
+    grid-row-start: 10;
+    grid-row-end: 22;
+  }
+}
+
+.gallery__grid > div:nth-child(2) {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 8;
+}
+
+.gallery__grid > div:nth-child(3) {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 8;
+  grid-row-end: 12;
+}
+
+.gallery__grid > div:nth-child(4) {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 10;
+}
+
+.gallery__grid > div:nth-child(5) {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 10;
+  grid-row-end: 13;
+}
+
+.gallery__grid > div:nth-child(6) {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 4;
+  grid-row-end: 9;
+}
+
+.gallery__grid > div:nth-child(7) {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 9;
+  grid-row-end: 13;
+}
+
+.gallery__grid > div:nth-child(8) {
+  grid-column-start: 6;
+  grid-column-end: 7;
+  grid-row-start: 3;
+  grid-row-end: 8;
+}
+
+.gallery__grid > div:nth-child(9) {
+  grid-column-start: 6;
+  grid-column-end: 7;
+  grid-row-start: 8;
+  grid-row-end: 12;
+}
+
+.gallery__grid > div:nth-child(10) {
+  grid-column-start: 7;
+  grid-column-end: -1;
+  grid-row-start: 5;
+  grid-row-end: 10;
   border: none;
   background: var(--main-background-color);
 }
@@ -2130,6 +2244,11 @@ p {
   color: var(--secondary-text-color);
 }
 
+/**
+  |============================
+  | BUTTON
+  |============================
+*/
 .contacts__btn {
   margin-left: auto;
   margin-right: auto;
@@ -2185,6 +2304,12 @@ p {
 .icon-arrow-x, .icon-arrow-z {
   margin-left: 7px;
 }
+
+/**
+  |============================
+  | button up
+  |============================
+*/
 
 .back_to_top {
   opacity: 0;
@@ -2602,6 +2727,7 @@ p {
 .footer {
   background: var(--light-pink-background-color);
 }
+
 .footer__title {
   margin-bottom: 40px;
   width: 234px;
@@ -2617,6 +2743,7 @@ p {
     margin-bottom: 60px;
   }
 }
+
 .footer__title--top {
   font-family: "Titan One";
   font-style: normal;
@@ -2643,6 +2770,7 @@ p {
     margin-bottom: 16px;
   }
 }
+
 .footer__title--bottom {
   font-family: "Titan One";
   font-style: normal;
