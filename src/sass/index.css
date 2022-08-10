@@ -346,6 +346,13 @@ img {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   transform: scale(1.1) translateY(-50%);
 }
+@media screen and (min-width: 1200px) {
+  .page-header__button:hover, .page-header__button:focus {
+    background-color: #ECEBEB;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    transform: scale(1.1);
+  }
+}
 
 .page-header__button-text {
   margin-right: 12px;
@@ -442,21 +449,33 @@ img {
   background-color: var(--secondary-background-color);
   height: 502px;
   width: 100%;
-  padding-top: 194px;
-  padding-left: 20px;
 }
 @media screen and (min-width: 768px) {
   .hero {
     height: 416px;
-    padding-top: 102px;
-    padding-left: 32px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
     height: 664px;
+  }
+}
+
+.hero__container {
+  position: relative;
+  padding-top: 194px;
+  width: 320px;
+}
+@media screen and (min-width: 768px) {
+  .hero__container {
+    width: 768px;
+    padding-top: 104px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__container {
+    width: 1200px;
     padding-top: 147px;
-    padding-left: 17px;
   }
 }
 
@@ -859,7 +878,7 @@ img {
 }
 
 .hero__item:hover, .hero__item:focus {
-  background-color: transparent;
+  background-color: #ECEBEB;
 }
 
 .hero__item-products {
@@ -1488,7 +1507,7 @@ p {
 .text {
   background-repeat: no-repeat;
   background-size: auto;
-  padding-right: 80px;
+  padding-right: 60px;
 }
 @media (min-width: 768px) {
   .text {
@@ -2835,29 +2854,40 @@ p {
   fill: currentColor;
 }
 
-.footer-tel-txt {
+.footer-address {
+  font-style: normal;
   font-weight: 700;
   font-size: 12px;
   line-height: 1.8333333333;
+  display: flex;
   text-align: right;
   color: #000000;
   padding-bottom: 40px;
 }
 @media screen and (min-width: 768px) {
-  .footer-tel-txt {
+  .footer-address {
     font-size: 14px;
     line-height: 1.8571428571;
   }
 }
 @media screen and (min-width: 1200px) {
-  .footer-tel-txt {
+  .footer-address {
     font-size: 16px;
     line-height: 1.875;
   }
 }
 
 .footer-tel {
+  display: block;
   color: var(--secondary-text-color);
+  transition: transform var(--animation-timing-function);
+  margin-left: 17px;
+}
+
+.footer-tel:hover,
+.footer-tel:focus {
+  transform: scale(1.2);
+  border-bottom: 1px solid #d41443;
 }
 
 .sub-footer {
