@@ -54,12 +54,36 @@
         <p class="about__text about__text-secondary">
           Aliquam erat volutpat. Aenean accumsan.
         </p>
-        <button type="button" class="btnz btnz-white">
+        <button class="page-header__button" data-modal-about-open>
           <span class="btn__name">Read more</span>
           <svg width="7" height="10">
-            <use href="./images/iconx.svg#icon-arrow-x"></use>
+            <use href="./images/icons.svg#icon-arrow-x"></use>
           </svg>
         </button>
+      </div>
+    </div>
+    <!-- Modal Window -->
+    <div class="backdrop__about is-hidden" data-modal-about>
+      <div class="modal">
+        <button
+          class="modal__close-btn btn__about"
+          type="button"
+          data-modal-about-close
+        >
+          <svg class="icon-close" width="18px" height="18px" fill="red">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <div class="form">
+          <strong class="form__heading">Quam ad Fac Ice Cream</strong>
+          <p class="form__content">
+            Nihil simile frigus, sapidum glacies cremor in calido die! Sed quid
+            facere potes cum salsissimus glacies cremor fugat antequam eam
+            capere possis? Ne cures, cremorem tuum facere potes, et quomodo hic
+            liber tibi indicabit. Sequere Indicem ingredientium et quinque
+            facilium gressuum, et mox edes tuum homemade glacies cremor!
+          </p>
+        </div>
       </div>
     </div>
   </div>
