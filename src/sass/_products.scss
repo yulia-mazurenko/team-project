@@ -322,24 +322,32 @@ p {
   border: none;
   background: var(--main-background-color);
 }
+.products__button:hover {
+  background-color: var(--secondary-text-color);
+  box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%),
+    1px 4px 6px rgb(0 0 0 / 16%);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .products__icon {
-  width: 40px;
-  height: 40px;
+  width: 15px;
+  height: 15px;
   fill: var(--secondary-text-color);
 }
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
+.products__button:hover .products__icon {
+  fill: white;
 }
-.products__thumb {
-  //   position: relative;
-  overflow: hidden;
-}
+
+// .products__thumb {
+//   overflow: hidden;
+// }
 .products__action {
   opacity: 0;
   width: 83%;
   height: 34%;
+  padding-top: 12px;
   border: 1px solid;
   border-radius: 21px;
   position: absolute;
@@ -350,7 +358,11 @@ img {
   font-weight: 600;
   font-size: 14px;
   letter-spacing: 0.04em;
+  color: var(--secondary-text-color);
+  background: var(--third-background-color);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%),
+    1px 4px 6px rgb(0 0 0 / 16%);
 
   @media screen and (min-width: $tablet) {
     width: 80%;
@@ -367,21 +379,7 @@ img {
     font-size: 16px;
   }
 }
-.products__action--cream {
-  color: var(--secondary-background-color);
-  border-color: var(--secondary-background-color);
-  background: var(--third-background-color);
-}
-.products__action--coffee {
-  color: var(--beige-background-color);
-  border-color: var(--beige-background-color);
-  background: var(--third-background-color);
-}
-.products__action--milkshakes {
-  color: var(--green-background-color);
-  border-color: var(--green-background-color);
-  background: var(--third-background-color);
-}
+
 .products__button:hover .products__action {
   opacity: 1;
 }

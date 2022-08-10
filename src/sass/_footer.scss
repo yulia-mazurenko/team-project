@@ -112,8 +112,7 @@
   font-size: 12px;
   line-height: calc(22 / 12);
   display: flex;
-  text-align: right;
-
+  justify-content: flex-end;
   color: #000000;
   padding-bottom: 40px;
 
@@ -133,13 +132,14 @@
   display: block;
   color: var(--secondary-text-color);
   transition: transform var(--animation-timing-function);
-  margin-left: 17px;
+  margin-left: 10px;
 }
 
 .footer-tel:hover,
 .footer-tel:focus {
   // color: var(--third-text-color);
-  transform: scale(1.2);
+  transform: scale(1.1);
+
   border-bottom: 1px solid #d41443;
 }
 
