@@ -1,3 +1,8 @@
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 .about {
     padding-top: 60px;
     padding-bottom: 40px;
@@ -16,31 +21,34 @@
     @media (min-resolution: 2dppx) {
         .text {
         background-image: url(../images/about/mob-bg@2x-min.png);
+        background-size: contain;
     }}
 
  @media (min-resolution: 3dppx) {
     .text {
-     background-image: url(../images/about/mob-bg@3x-min.png);
- }}
+        background-image: url(../images/about/mob-bg@3x-min.png);
+        background-size: contain;
+    }
+}
 }
 
 @media (min-width: $desktop) {
     .about {
         background-image: url(../images/about/bg-min.png);
-        background-size: auto;
+        background-size: 100vw;
     }
 
     @media (min-resolution: 2dppx) {
         .about {
             background-image: url(../images/about/bg@2x-min.png);
-            background-size: auto;
+            background-size: 100vw
         }
     }
 
     @media (min-resolution: 3dppx) {
         .about {
             background-image: url(../images/about/bg@3x-min.png);
-            background-size: auto;
+            background-size: 100vw;
         }
     }
 }
@@ -57,13 +65,12 @@
 
 .text {
     background-repeat: no-repeat;
-    background-size: auto;
     padding-right: 60px;
 
     @media (min-width: $tablet) {
         margin-left: 32px;
         padding-right: 18px;
-        width: 50%;
+        width: 50vw;
     }
 
     @media (min-width: $desktop){
@@ -113,6 +120,19 @@
     line-height: 1.62;
 
     color: var(--paragraph-text-color);
+
+    @media (min-width: $tablet) {
+        font-size: 14px;
+        line-height: 1.76;
+        letter-spacing: 0.04em;
+        margin-bottom: 20px;
+    }
+
+    @media (min-width: $desktop){
+        font-size: 16px;
+        line-height: 1.76;
+        letter-spacing: 0.04em;
+    }
 }
 
 .about__text {
@@ -123,6 +143,18 @@
     line-height: 1.5;
     
     color: var(--description-text-color);
+
+    @media (min-width: $tablet) {
+        font-size: 14px;
+        line-height: 1.76;
+        letter-spacing: 0.04em;
+    }
+
+    @media (min-width: $desktop){
+        font-size: 14px;
+        line-height: 1.94;
+        letter-spacing: 0.04em;
+    }
 }
 
 .about__text-secondary {
@@ -139,28 +171,6 @@
     }
 }
 
-.about__button {
-    font-family: DM Sans;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.31;
-    width: 176px;
-    height: 44px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    background-color: var(--primery-white-coloc);
-    border-radius: 22px;
-    border: none;
-    color: var(--secondary-text-color);
-
-    transition: background-color var(--animation-timing-function);
-
-    &:hover,
-    &:focus {
-        background: var(--secondary-text-color);
-        color: var(--primery-white-coloc);
-    }
+.btn__name {
+    margin-right: 14px;
 }
