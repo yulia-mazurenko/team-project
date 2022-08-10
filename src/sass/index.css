@@ -1463,7 +1463,7 @@ img {
 .text {
   background-repeat: no-repeat;
   background-size: auto;
-  padding-right: 80px;
+  padding-right: 60px;
 }
 @media (min-width: 768px) {
   .text {
