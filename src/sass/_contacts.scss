@@ -293,13 +293,14 @@
 
 
 .back_to_top {
-    
+    width: 0px;
+    height: 0px;
     opacity: 0;
     visibility: hidden;
 
     @media screen and(min-width: $tablet) {
         position: fixed;
-        bottom: 80px;
+        bottom: 40px;
         right: 40px;
         z-index: 9999;
         width: 60px;
@@ -316,5 +317,6 @@
     
   .back_to_top-show {
     display: block;
+    
   }
 
