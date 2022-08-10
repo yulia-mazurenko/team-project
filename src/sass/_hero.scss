@@ -21,10 +21,12 @@
 
   @media screen and (min-width: $tablet) {
     width: 768px;
+    height: 416px;
     padding-top: 104px;
   }
   @media screen and (min-width: $desktop) {
     width: 1200px;
+    height: 664px;
     padding-top: 147px;
   }
 }
@@ -53,37 +55,6 @@
     left: 516px;
   }
 }
-// .hero__round {
-//   position: absolute;
-//   top: 43px;
-//   left: 248px;
-//   width: 335px;
-//   height: 333px;
-//   border-radius: 50%;
-//   background-color: var(--third-text-color);
-
-//   @media screen and (max-width: 767px) {
-//     display: none;
-//   }
-//   @media screen and (min-width: $desktop) {
-//     width: 534px;
-//     height: 534px;
-//     top: 54px;
-//     left: 516px;
-//   }
-// }
-// .hero__round-mob {
-//   position: absolute;
-//   top: 83px;
-//   left: 36px;
-//   width: 286px;
-//   height: 344px;
-//   background-image: url(../images/hero/Hero__round.png);
-
-//   @media screen and (min-width: $tablet) {
-//     display: none;
-//   }
-// }
 
 // Big round image - End
 
@@ -148,6 +119,14 @@
 // Ice-cream image - End
 
 // Milk image - Start
+
+.hero__milk {
+  position: absolute;
+  top: 246px;
+  left: 32px;
+  width: 152px;
+  height: 154px;
+}
 .hero__milk-img {
   position: absolute;
   top: 246px;
@@ -168,6 +147,7 @@
     background-image: url('../images/hero/hero-milk-desc.png');
     background-size: 213px 216px;
   }
+
 }
 /* Retina 2x */
 @media (min-device-pixel-ratio: 2),
@@ -268,13 +248,11 @@
 .hero__wrapper-16 {
   width: 43px;
   height: 44px;
-  margin-bottom: 16px;
   margin-left: 8px;
 
   @media screen and (min-width: $desktop) {
     width: 72px;
     height: 77px;
-    margin-bottom: 15px;
     margin-left: 20px;
   }
 
@@ -385,7 +363,12 @@
     width: 277px;
     margin-bottom: 108px;
   }
+
+  &:hover {
+    margin-bottom: 35px;
+  }
 }
+
 
 .hero__header {
   width: 100%;
@@ -400,6 +383,8 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--main-text-color);
+
+  transition-duration: 500ms;
 
   @media screen and (min-width: $tablet) {
     height: 80px;
@@ -504,7 +489,6 @@
 // 2 Buttons - End
 
 // Hero Text - Start
-
 .hero__text {
   position: relative;
   max-width: 125px;
@@ -564,4 +548,137 @@
     transform: scale(1.1);
     transition: transform var(--animation-timing-function);
   }
+}
+
+// Animation - hero content - Start
+
+.hero__content:hover .hero__header {
+  @media screen and (min-width: $tablet) {
+  margin-left: 30px;
+  width: 120%;
+  height: 180px;
+  padding: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+
+  box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 8%),
+    0px 2px 2px rgb(0 0 0 / 12%);
+  transform: scale(1.1);
+  transition: transform var(--animation-timing-function), scale var(--animation-timing-function);
+
+//   @media screen and (min-width: $tablet) {
+//     height: auto;
+// }
+}
+}
+
+.hero__content:hover .hero__buttons {
+  gap: 40px;
+  margin-left: 10px;
+  width: 100%;
+
+  @media screen and (min-width: $tablet) {
+    margin-left: 30px;
+    width: 120%;
+  }
+}
+.hero__content:hover .hero__item {
+  box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 8%),
+      0px 2px 2px rgb(0 0 0 / 12%);
+    transform: scale(1.4);
+    transition: transform var(--animation-timing-function);
+}
+
+.hero__content:hover .hero__item-products {
+  transition-duration: 1000ms;
+  width: 230px;
+}
+.hero__content:hover .hero__item-about {
+  transition-duration: 2000ms;
+  width: 280px;
+}
+
+.hero__text-btn:hover .hero__text {
+  width: 300px;
+  height: 80px;
+  padding: 10px;
+  margin-left: 160px;
+
+  box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 8%),
+    0px 2px 2px rgb(0 0 0 / 12%);
+  transform: scale(1.2);
+  transition: transform var(--animation-timing-function);
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 280px;
+    width: 300px;
+  height: 120px;
+  }
+}
+.hero__text-btn:hover .hero__btn {
+  position: absolute;
+  top: 380px;
+  left: 170px;
+
+  box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 8%),
+  0px 2px 2px rgb(0 0 0 / 12%);
+transform: scale(1.6);
+transition: transform var(--animation-timing-function);
+transition-duration: 1000ms;
+
+@media screen and (min-width: $desktop) {
+  top: 560px;
+  left: 280px;
+  width: 40px;
+  height: 40px;
+  background-image: url('../images/hero/hero__arrow-right__2x.png');
+}
+}
+
+//  Animation Pulse
+.pulse {  
+  display: block;
+margin-bottom: 16px;  
+width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+  box-shadow: 0 0 0 rgba(245, 9, 127, 0.4);
+  animation: pulse 2s infinite;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 15px;  
+    width: 85px;
+  height: 85px;
+  }
+.pulse:hover {
+  animation: none;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgb(245, 95, 170);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 10px rgba(245, 32, 57, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(245, 32, 57, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(245, 32, 57, 0.783);
+    box-shadow: 0 0 0 0 rgba(245, 32, 57, 0.783);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 10px rgba(245, 32, 57, 0);
+      box-shadow: 0 0 0 10px rgba(245, 32, 57, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(245, 32, 57, 0);
+      box-shadow: 0 0 0 0 rgba(245, 32, 57, 0);
+  }
+}
 }
