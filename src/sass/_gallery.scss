@@ -1,7 +1,16 @@
-.gallery {
-    @extend %section;
+.gallery{
     background: linear-gradient(to bottom, #fff5f6 0%, #fff5f6 19%, #ffffff 19%, #ffffff 100%);
+    @media screen and(min-width: $tablet) {
+        background: linear-gradient(to bottom, #fff5f6 0%, #fff5f6 65%, #ffffff 19%, #ffffff 100%);
+    }
 
+    @media screen and(min-width: $desktop) {
+        background: linear-gradient(to bottom, #fff5f6 0%, #fff5f6 29%, #ffffff 19%, #ffffff 100%);
+    }
+}
+
+.gallery__container {
+    @extend %section;
     @media screen and (min-width: $mobile) and (max-width: 1199px) {
             padding: 0;
         }
