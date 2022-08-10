@@ -171,6 +171,32 @@ img {
     }
 }
 
+.about__button {
+
+    @extend %button;
+    z-index: 998;
+
+    transition: background-color var(--animation-timing-function);
+    transition: transform var(--animation-timing-function);
+
+    &:hover,
+    &:focus {
+        background-color: #ECEBEB;
+        box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 8%), 0px 2px 2px rgb(0 0 0 / 12%);
+        transform: scale(1.1) translateY(-50%);
+    }
+
+    @media screen and (min-width: $desktop) {
+
+        &:hover,
+        &:focus {
+            background-color: #ECEBEB;
+            box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 8%), 0px 2px 2px rgb(0 0 0 / 12%);
+            transform: scale(1.1);
+        }
+    }
+}
+
 .btn__name {
     margin-right: 14px;
 }
@@ -233,15 +259,3 @@ img {
     line-height: 1.94;
 }
 
-
-
-.btn__about{
-    @media screen and (max-width: 1199px) {
-        display: flex;
-        transform: translateY(-50%);
-    }
-
-    @media screen and (max-width: 767px) {
-        display: block;
-    }
-}
