@@ -248,6 +248,7 @@ img {
 }
 
 .page-header__logo {
+  z-index: 99;
   padding-top: 8px;
   padding-bottom: 8px;
   transition: transform var(--animation-timing-function);
@@ -537,11 +538,14 @@ img {
   position: relative;
   padding-top: 194px;
   width: 320px;
+  height: 502px;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 768px) {
   .hero__container {
     width: 768px;
+    height: 416px;
     padding-top: 104px;
   }
 }
@@ -549,6 +553,7 @@ img {
 @media screen and (min-width: 1200px) {
   .hero__container {
     width: 1200px;
+    height: 664px;
     padding-top: 147px;
   }
 }
@@ -561,6 +566,7 @@ img {
   height: 344px;
   border-radius: 50%;
   background-color: var(--third-text-color);
+  overflow: hidden;
 }
 
 @media screen and (min-width: 768px) {
@@ -667,6 +673,13 @@ screen and (min-resolution: 3dppx) and (min-width: 1200px) {
   .hero__main-img {
     background-image: url("../images/hero/hero-icecream-desc@3x.png");
   }
+}
+.hero__milk {
+  position: absolute;
+  top: 246px;
+  left: 32px;
+  width: 152px;
+  height: 154px;
 }
 
 .hero__milk-img {
@@ -825,7 +838,6 @@ screen and (min-resolution: 3dppx) and (min-width: 1200px) {
 .hero__wrapper-16 {
   width: 43px;
   height: 44px;
-  margin-bottom: 16px;
   margin-left: 8px;
 }
 
@@ -833,7 +845,6 @@ screen and (min-resolution: 3dppx) and (min-width: 1200px) {
   .hero__wrapper-16 {
     width: 72px;
     height: 77px;
-    margin-bottom: 15px;
     margin-left: 20px;
   }
 }
@@ -958,6 +969,9 @@ screen and (min-resolution: 3dppx) and (min-width: 1200px) {
     margin-bottom: 108px;
   }
 }
+.hero__content:hover {
+  margin-bottom: 35px;
+}
 
 .hero__header {
   width: 100%;
@@ -971,6 +985,7 @@ screen and (min-resolution: 3dppx) and (min-width: 1200px) {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--main-text-color);
+  transition-duration: 500ms;
 }
 
 @media screen and (min-width: 768px) {
@@ -1034,7 +1049,11 @@ screen and (min-resolution: 3dppx) and (min-width: 1200px) {
 
 .hero__item:hover,
 .hero__item:focus {
-  background-color: #ECEBEB;
+  background-color: #ecebeb;
+  color: var(--secondary-text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  transform: scale(1.1);
+  transition: transform var(--animation-timing-function);
 }
 
 .hero__item-products {
@@ -1136,6 +1155,136 @@ screen and (min-resolution: 3dppx) and (min-width: 1200px) {
     width: 26px;
     height: 26px;
     margin-left: 213px;
+  }
+}
+.hero__btn:hover, .hero__btn:focus {
+  background-color: #ecebeb;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  transform: scale(1.1);
+  transition: transform var(--animation-timing-function);
+}
+
+@media screen and (min-width: 768px) {
+  .hero__content:hover .hero__header {
+    margin-left: 30px;
+    width: 120%;
+    height: 180px;
+    padding: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    transform: scale(1.1);
+    transition: transform var(--animation-timing-function), scale var(--animation-timing-function);
+  }
+}
+
+.hero__content:hover .hero__buttons {
+  gap: 40px;
+  margin-left: 10px;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .hero__content:hover .hero__buttons {
+    margin-left: 30px;
+    width: 120%;
+  }
+}
+
+.hero__content:hover .hero__item {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  transform: scale(1.4);
+  transition: transform var(--animation-timing-function);
+}
+
+.hero__content:hover .hero__item-products {
+  transition-duration: 1000ms;
+  width: 230px;
+}
+
+.hero__content:hover .hero__item-about {
+  transition-duration: 2000ms;
+  width: 280px;
+}
+
+.hero__text-btn:hover .hero__text {
+  width: 300px;
+  height: 80px;
+  padding: 10px;
+  margin-left: 160px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  transform: scale(1.2);
+  transition: transform var(--animation-timing-function);
+}
+@media screen and (min-width: 1200px) {
+  .hero__text-btn:hover .hero__text {
+    margin-left: 280px;
+    width: 300px;
+    height: 120px;
+  }
+}
+
+.hero__text-btn:hover .hero__btn {
+  position: absolute;
+  top: 380px;
+  left: 170px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  transform: scale(1.6);
+  transition: transform var(--animation-timing-function);
+  transition-duration: 1000ms;
+}
+@media screen and (min-width: 1200px) {
+  .hero__text-btn:hover .hero__btn {
+    top: 560px;
+    left: 280px;
+    width: 40px;
+    height: 40px;
+    background-image: url("../images/hero/hero__arrow-right__2x.png");
+  }
+}
+
+.pulse {
+  display: block;
+  margin-bottom: 16px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+  box-shadow: 0 0 0 rgba(245, 9, 127, 0.4);
+  -webkit-animation: pulse 2s infinite;
+          animation: pulse 2s infinite;
+}
+@media screen and (min-width: 1200px) {
+  .pulse {
+    margin-bottom: 15px;
+    width: 85px;
+    height: 85px;
+  }
+}
+.pulse .pulse:hover {
+  -webkit-animation: none;
+          animation: none;
+}
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgb(245, 95, 170);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 10px rgba(245, 32, 57, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(245, 32, 57, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(245, 32, 57, 0.783);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(245, 32, 57, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(245, 32, 57, 0);
   }
 }
 
@@ -1547,7 +1696,7 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
     width: 241px;
     height: 106px;
     font-size: 16px;
-    ine-height: 1.8;
+    line-height: 1.8;
     margin-bottom: 90px;
     margin-left: 30px;
   }
@@ -2433,20 +2582,6 @@ screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 3dppx)
   letter-spacing: 0.04em;
   padding-bottom: 16px;
   color: #000000;
-}
-
-@media screen and (min-width: 768px) {
-  .slider__text {
-    padding-left: 50px;
-    padding-right: 55px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .slider__text {
-    padding-left: 72px;
-    padding-right: 74px;
-  }
 }
 
 .slider__header {
