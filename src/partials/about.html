@@ -1,0 +1,66 @@
+<section class="about">
+  <div class="about__container container">
+    <p class="about__title">tradition and love</p>
+    <h2 id="about" class="about__caption">how it’s made?</h2>
+    <div class="about__content">
+      <picture class="about__pic">
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ./images/about/l.png    1x,
+            ./images/about/l@2x.png 2x,
+            ./images/about/l@3x.png 3x
+          "
+          type="image/png"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/about/m.png    1x,
+            ./images/about/m@2x.png 2x,
+            ./images/about/m@3x.png 3x
+          "
+          type="image/png"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./images/about/s.png    1x,
+            ./images/about/s@2x.png 2x,
+            ./images/about/s@3x.png 3x
+          "
+          type="image/png"
+        />
+        <img
+          class="about__img"
+          src="./images/about/l.png"
+          alt="milk"
+          width="501"
+          height="501"
+        />
+      </picture>
+      <div class="text">
+        <p class="about__main-text">
+          Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
+          cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at
+          justo fringilla.
+        </p>
+        <p class="about__text">
+          Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
+          Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
+          suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
+          tincidunt.
+        </p>
+        <p class="about__text about__text-secondary">
+          Aliquam erat volutpat. Aenean accumsan.
+        </p>
+        <button type="button" class="btnz btnz-white">
+          <span>Read more</span>
+          <svg width="7" height="10">
+            <use href="./images/iconx.svg#icon-arrow-x"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

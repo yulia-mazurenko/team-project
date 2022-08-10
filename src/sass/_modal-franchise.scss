@@ -28,7 +28,7 @@
     border-radius: 30px;
     transform: translate(-50%, -50%) scale(1);
     min-width: 320px;
-    min-height: 500px;
+    min-height: 300px;
     background-color: var(--white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     
@@ -247,11 +247,12 @@
     padding-left: 7px;
     user-select: none;
     color: #212121;
+    margin-left: 10px;
 
     @media screen and(min-width: $desktop) {
+        margin-left: 0px;
         font-size: 14px;
         line-height: 1.71;
-
     }
 }
 

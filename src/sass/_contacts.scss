@@ -223,15 +223,6 @@
 }
 
 
-
-/**
-  |============================
-  | BUTTON
-  |============================
-*/
-
-
-
 .contacts__btn{
     @extend %list;
     margin-left: auto;
@@ -300,11 +291,6 @@
     margin-left: 7px;
 }
 
-/**
-  |============================
-  | button up
-  |============================
-*/
 
 .back_to_top {
     
@@ -313,7 +299,7 @@
 
     @media screen and(min-width: $tablet) {
         position: fixed;
-        bottom: 80px;
+        bottom: 40px;
         right: 40px;
         z-index: 9999;
         width: 60px;

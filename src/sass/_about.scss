@@ -1,0 +1,166 @@
+.about {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    background-color: var(--third-background-color);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media screen and (min-width: $mobile) and (max-width: 767px) {
+    .text {
+        background-position: left 0 top 80px;
+        background-image: url(../images/about/mob-bg-min.png);
+    }
+
+    @media (min-resolution: 2dppx) {
+        .text {
+        background-image: url(../images/about/mob-bg@2x-min.png);
+    }}
+
+ @media (min-resolution: 3dppx) {
+    .text {
+     background-image: url(../images/about/mob-bg@3x-min.png);
+ }}
+}
+
+@media (min-width: $desktop) {
+    .about {
+        background-image: url(../images/about/bg-min.png);
+        background-size: auto;
+    }
+
+    @media (min-resolution: 2dppx) {
+        .about {
+            background-image: url(../images/about/bg@2x-min.png);
+            background-size: auto;
+        }
+    }
+
+    @media (min-resolution: 3dppx) {
+        .about {
+            background-image: url(../images/about/bg@3x-min.png);
+            background-size: auto;
+        }
+    }
+}
+
+.about__content {
+    @media (min-width: $tablet) {
+            display: flex;
+    }
+
+    @media (min-width: $desktop){
+        display: flex;
+    }
+}
+
+.text {
+    background-repeat: no-repeat;
+    background-size: auto;
+    padding-right: 80px;
+
+    @media (min-width: $tablet) {
+        margin-left: 32px;
+        padding-right: 18px;
+        width: 50%;
+    }
+
+    @media (min-width: $desktop){
+        padding-right: 105px;
+        width: 50%;
+        margin-left: 99px;
+    }
+}
+
+.about__title {
+    margin-bottom: 15px;
+
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.16;
+    text-align: center;
+    text-transform: uppercase;
+    
+    color: var(--third-text-color);
+}
+
+.about__caption {
+    margin-bottom: 32px;
+
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 39px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    
+    color: var(--secondary-text-color);
+}
+
+.about__main-text {
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.62;
+
+    color: var(--paragraph-text-color);
+}
+
+.about__text {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    
+    color: var(--description-text-color);
+}
+
+.about__text-secondary {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    @media (min-width: $tablet) {
+        margin-bottom: 40px;
+    }
+
+    @media (min-width: $desktop){
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+}
+
+.about__button {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    width: 176px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: var(--primery-white-coloc);
+    border-radius: 22px;
+    border: none;
+    color: var(--secondary-text-color);
+
+    transition: background-color var(--animation-timing-function);
+
+    &:hover,
+    &:focus {
+        background: var(--secondary-text-color);
+        color: var(--primery-white-coloc);
+    }
+}
