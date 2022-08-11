@@ -70,9 +70,6 @@
     <symbol id="icon-arrow-z" viewBox="0 0 22 32">
       <path fill="none" stroke="#ffffff" style="stroke: var(--color1, #ffffff)" stroke-linejoin="round"
         stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M5.041 3.2l13.224 12.8-13.224 12.8"></path>
-      <symbol id="icon-close" viewBox="0 0 32 32">
-        <path d="m2.52 2 26.96 28M2 29.48 30 2.52" />
-      </symbol>
       <symbol id="icon-arrow" viewBox="0 0 22 32">
         <path d="M4.49 3.2 18.186 16 4.49 28.8" />
       </symbol>
