@@ -24,6 +24,11 @@
     &:focus {
         transform: scale(2);
     }
+    
+        @media screen and(min-width: $desktop) {
+            width: 138px; 
+            height: 138px;
+        }
 }
 
 .gallery__img--large {
@@ -33,6 +38,11 @@
     &:focus {
         transform: scale(1);
     }
+
+        @media screen and(min-width: $desktop) {
+            width: 283px;
+            height: 283px;
+        }
 }
 
 .gallery__grid {
