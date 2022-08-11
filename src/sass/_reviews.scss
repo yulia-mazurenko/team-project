@@ -160,27 +160,6 @@
     &:hover{
         box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     }
-    &::before{
-        position: absolute;
-        left: 53px;
-        top: 30px;
-        content: url(/src/images/reviews/“.png);
-        width: 54px;
-        height: 40px;
-        color: #E1E1E1;
-        @media screen and (min-width: 768px) and (max-width: 1199px) {
-            left: 6px;
-            top: 20px;
-            width: 60px;
-            height: 40px;
-        }
-        @media screen  and (min-width: 1200px) {
-            left: 72px;
-            top: 32px;
-            width: 54px;
-            height: 40px;
-        }
-    }
     &::after{
         content: '...';
         justify-content: center;
@@ -204,6 +183,7 @@
 
 }
 .slider__text{
+    position: relative;
     background-image: repeating-linear-gradient(#E1E1E1 -2px -1px, transparent -1px 28px);
     font-family: 'DM Sans';
     font-style: normal;
@@ -218,6 +198,29 @@
 
 
     color: #000000;
+
+    &::before{
+        position: absolute;
+        z-index: -10;
+        left: 0px;
+        top: -13px;
+        content: url(/src/images/reviews/“.png);
+        width: 54px;
+        height: 40px;
+        color: #E1E1E1;
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            left: 0px;
+            top: -17px;
+            width: 60px;
+            height: 40px;
+        }
+        @media screen  and (min-width: 1200px) {
+            left: 0px;
+            top: -15px;
+            width: 54px;
+            height: 40px;
+        }
+    }
 }
 .slider__header{
     font-family: 'DM Sans';
