@@ -11,6 +11,7 @@
 
 .gallery__container {
     @extend %section;
+    animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     @media screen and (min-width: $mobile) and (max-width: 1199px) {
         padding: 0;
     }
@@ -18,6 +19,20 @@
     @media screen and(min-width: $desktop) {
         padding-left: 94px;
         padding-right: 94px;
+    }
+}
+
+@keyframes slide-in-elliptic-top-fwd {
+    0% {
+        transform: translateY(-600px) rotateX(-30deg) scale(0);
+        transform-origin: 50% 100%;
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0) rotateX(0) scale(1);
+        transform-origin: 50% 1400px;
+        opacity: 1;
     }
 }
 
@@ -61,7 +76,7 @@
     
         &:hover,
         &:focus {
-            transform: scale(1);
+            transform: scale(1.5);
             box-shadow: 21px 18px 64px -16px rgba(230, 23, 23, 0.26);
         }
     
