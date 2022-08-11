@@ -155,7 +155,28 @@ transition: transform var(--animation-timing-function);
     @media screen and (max-width: 1199px) {
         transform: translateX(0);
     }
+}
 
+.backdrop__mobile-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 99;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: #343a4b57;
+
+    @media screen and (min-width: $desktop) {
+        display: none;
+    }
+}
+
+.page-header__wrapper.is-open ~ .backdrop__mobile-menu {
+
+    @media screen and (max-width: 1199px) {
+    display: block;
+    }
 }
 
 .page-header__button {
@@ -169,9 +190,8 @@ transition: transform var(--animation-timing-function);
     @media screen and (max-width: 1199px) {
         position: absolute;
         top: 50%;
-        right: 0;
-        transform: translateY(-50%);   
-                
+        right: 32px;
+        transform: translateY(-50%);                   
     }
 
     @media screen and (max-width: 767px) {

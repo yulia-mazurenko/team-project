@@ -10,6 +10,10 @@ body.is-open {
     overflow: hidden;
 }
 
+body.no-scroll {
+    overflow: hidden;
+}
+
 img {
     display: block;
     max-width: 100%;
