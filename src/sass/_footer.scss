@@ -1,9 +1,11 @@
 .footer {
   background: var(--light-pink-background-color);
+  position: relative;
 
   &__title {
     margin-bottom: 40px;
     width: 234px;
+    display: block;
 
     @media screen and (min-width: $tablet) {
       width: 340px;
@@ -14,6 +16,7 @@
       margin-bottom: 60px;
     }
   }
+
   &__title--top {
     font-family: 'Titan One';
     font-style: normal;
@@ -39,6 +42,51 @@
       line-height: calc(36 / 30);
       margin-bottom: 16px;
     }
+  }
+  .ukrain {
+    display: none;
+
+    @media screen and (min-width: 1200px) {
+      display: block;
+    }
+  }
+
+  .ukrain-title {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: calc(29 / 25);
+    letter-spacing: 00.04em;
+    color: #1d72ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 2px solid #1d72ff;
+    border-right: 2px solid #1d72ff;
+    border-bottom: 2px solid #f1ff00;
+    border-left: 2px solid #f1ff00;
+    border-radius: 10px;
+    position: absolute;
+    top: 5%;
+    left: 45%;
+    opacity: 0;
+    transition: opacity 1000ms;
+  }
+
+  .footer-info:hover .ukrain-title {
+    opacity: 1;
+  }
+
+  .ukraine-txt {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: calc(39 / 35);
+    text-transform: uppercase;
+    letter-spacing: 00.04em;
+    color: #f1ff00;
   }
 
   &__title--bottom {
