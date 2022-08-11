@@ -397,6 +397,11 @@
     line-height: calc(44 / 38);
     margin-bottom: 24px;
   }
+
+  &:hover {
+  transform: scale(1.1);
+  transition: transform var(--animation-timing-function);
+  }
 }
 
 .hero__header-part {
@@ -499,11 +504,24 @@ background-color: var(--secondary-text-color);
 // 2 Buttons - End
 
 // Hero Text - Start
+
+.hero__text-btn {
+  position: absolute;
+  top: 287px;
+  left: 184px;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: $desktop) {
+    top: 456px;
+    left: 229px;
+}
+}
 .hero__text {
   position: relative;
   max-width: 125px;
   height: 48px;
-  margin-left: 152px;
   margin-bottom: 7px;
 
   font-family: 'DM Sans';
@@ -521,7 +539,6 @@ background-color: var(--secondary-text-color);
     height: 78px;
     font-size: 14px;
     line-height: calc(20 / 14);
-    margin-left: 213px;
     margin-bottom: 20px;
   }
 }
@@ -529,120 +546,94 @@ background-color: var(--secondary-text-color);
 // Hero Text - End
 
 // Hero Button (arrow right)
-
-.hero__btn {
+.hero__btn-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
   width: 18px;
   height: 18px;
-  margin-left: 152px;
-  padding: 0;
   border-radius: 50%;
-  border: 0;
-  background-color: transparent;
-  background-image: url('../images/hero/hero__arrow-right.png');
-  background-size: cover;
-
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
+  border: none;
+  background: var(--main-background-color);
 
   @media screen and (min-width: $desktop) {
     width: 26px;
     height: 26px;
-    margin-left: 213px;
-    background-image: url('../images/hero/hero__arrow-right__2x.png');
-
-  }
-  &:hover,
-  &:focus {
-    background-color: #ecebeb;
-    box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 8%),
-      0px 2px 2px rgb(0 0 0 / 12%);
-    transform: scale(1.1);
-    transition: transform var(--animation-timing-function);
-  }
-}
-
-// Animation - hero content - Start
-
-.hero__content:hover .hero__header {
-  @media screen and (min-width: $tablet) {
-  margin-left: 30px;
-  width: 120%;
-  height: auto;
-  padding: 20px;
-  margin-bottom: 30px;
-  text-align: center;
-
-  box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 8%),
-    0px 2px 2px rgb(0 0 0 / 12%);
-  transform: scale(1.1);
-  transition: transform var(--animation-timing-function), scale var(--animation-timing-function);
 }
 }
+.hero__btn-arrow:hover {
+  background-color: var(--secondary-text-color);
+  box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%),
+    1px 4px 6px rgb(0 0 0 / 16%);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero__arrow-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: none;
 
-.hero__content:hover .hero__buttons {
-  gap: 40px;
-  margin-left: 10px;
-  width: 100%;
+  @media screen and (min-width: $desktop) {
+    width: 26px;
+    height: 26px;
+}
+}
+.hero__btn-arrow__icon {
+  width: 10px;
+  height: 10px;
+  fill: var(--secondary-text-color);
 
-  @media screen and (min-width: $tablet) {
-    margin-left: 30px;
-    width: 120%;
-    gap: 60px;
-
+  @media screen and (min-width: $desktop) {
+    width: 15px;
+    height: 15px;
   }
 }
-.hero__content:hover .hero__item {
-  box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 8%),
-      0px 2px 2px rgb(0 0 0 / 12%);
-    transform: scale(1.4);
-    transition: transform var(--animation-timing-function);
+.hero__btn-arrow:hover .hero__btn-arrow__icon {
+  fill: white;
 }
 
-.hero__content:hover .hero__item-products {
-  transition-duration: 1000ms;
-  width: 230px;
-}
-.hero__content:hover .hero__item-about {
-  transition-duration: 2000ms;
-  width: 280px;
-}
 
-// .hero__text-btn:hover .hero__text {
-//   width: 300px;
-//   height: 80px;
-//   padding: 10px;
-//   margin-left: 160px;
 
-//   box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 8%),
-//     0px 2px 2px rgb(0 0 0 / 12%);
-//   transform: scale(1.2);
-//   transition: transform var(--animation-timing-function);
+// .hero__btn {
+//   width: 18px;
+//   height: 18px;
+//   padding: 0;
+//   border-radius: 50%;
+//   border: 0;
+//   background-color: transparent;
+//   background-image: url('../images/hero/hero__arrow-right.png');
+//   background-size: cover;
+
+//   @media screen and (max-width: 767px) {
+//     display: none;
+//   }
 
 //   @media screen and (min-width: $desktop) {
-//     margin-left: 280px;
-//     width: 300px;
-//   height: 120px;
+//     width: 26px;
+//     height: 26px;
+//     background-image: url('../images/hero/hero__arrow-right__2x.png');
+
 //   }
-// }
-// .hero__text-btn:hover .hero__btn {
-//   position: absolute;
-//   top: 380px;
-//   left: 170px;
-
-//   box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 8%),
-//   0px 2px 2px rgb(0 0 0 / 12%);
-// transform: scale(1.6);
-// transition: transform var(--animation-timing-function);
-// transition-duration: 1000ms;
-
-// @media screen and (min-width: $desktop) {
-//   top: 560px;
-//   left: 280px;
-//   width: 40px;
-//   height: 40px;
-//   background-image: url('../images/hero/hero__arrow-right__2x.png');
-// }
+//   &:hover,
+//   &:focus {
+//     background-color: #ecebeb;
+//     box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 8%),
+//       0px 2px 2px rgb(0 0 0 / 12%);
+//     transform: scale(1.1);
+//     transition: transform var(--animation-timing-function);
+//   }
 // }
 
 //  Animation Pulse
