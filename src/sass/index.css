@@ -1963,7 +1963,7 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .gallery__overflow--large:hover, .gallery__overflow--large:focus {
-  transform: scale(1);
+  transform: scale(1.5);
   box-shadow: 21px 18px 64px -16px rgba(230, 23, 23, 0.26);
 }
 @media screen and (min-width: 768px) {
