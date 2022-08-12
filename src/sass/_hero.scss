@@ -19,6 +19,15 @@
   height: 502px;
   overflow: hidden;
 
+  @media screen and (min-width: 480px) {
+    width: 480px;
+<<<<<<< Updated upstream
+=======
+
+    padding-top: 104px;
+>>>>>>> Stashed changes
+  }
+
   @media screen and (min-width: $tablet) {
     width: 768px;
     height: 416px;
@@ -41,6 +50,10 @@
   border-radius: 50%;
   background-color: var(--third-text-color);
   overflow: hidden;
+
+  @media screen and (min-width: 480px) {
+    left: 120px;
+  }
 
   @media screen and (min-width: $tablet) {
     width: 335px;
@@ -68,6 +81,14 @@
   height: 410px;
   background-image: url('../images/hero/hero-icecream-mob.png');
   background-size: 171px 410px;
+
+  @media screen and (min-width: 480px) {
+<<<<<<< Updated upstream
+    left: 200px;
+=======
+    left: 100px;
+>>>>>>> Stashed changes
+  }
 
   @media screen and (min-width: $tablet) {
     top: 80px;
@@ -147,7 +168,6 @@
     background-image: url('../images/hero/hero-milk-desc.png');
     background-size: 213px 216px;
   }
-
 }
 /* Retina 2x */
 @media (min-device-pixel-ratio: 2),
@@ -369,7 +389,6 @@
   }
 }
 
-
 .hero__header {
   width: 100%;
   height: 106px;
@@ -399,8 +418,8 @@
   }
 
   &:hover {
-  transform: scale(1.1);
-  transition: transform var(--animation-timing-function);
+    transform: scale(1.1);
+    transition: transform var(--animation-timing-function);
   }
 }
 
@@ -459,8 +478,9 @@
 .hero__item:hover .hero__link-about {
   color: var(--main-text-color);
 }
-.hero__item-about:hover, .hero__item-about:focus {
-background-color: var(--secondary-text-color);
+.hero__item-about:hover,
+.hero__item-about:focus {
+  background-color: var(--secondary-text-color);
 }
 
 .hero__item-products {
@@ -516,7 +536,7 @@ background-color: var(--secondary-text-color);
   @media screen and (min-width: $desktop) {
     top: 456px;
     left: 229px;
-}
+  }
 }
 .hero__text {
   position: relative;
@@ -562,7 +582,7 @@ background-color: var(--secondary-text-color);
   @media screen and (min-width: $desktop) {
     width: 26px;
     height: 26px;
-}
+  }
 }
 .hero__btn-arrow:hover {
   background-color: var(--secondary-text-color);
@@ -588,7 +608,7 @@ background-color: var(--secondary-text-color);
   @media screen and (min-width: $desktop) {
     width: 26px;
     height: 26px;
-}
+  }
 }
 .hero__btn-arrow__icon {
   width: 10px;
@@ -603,8 +623,6 @@ background-color: var(--secondary-text-color);
 .hero__btn-arrow:hover .hero__btn-arrow__icon {
   fill: white;
 }
-
-
 
 // .hero__btn {
 //   width: 18px;
@@ -637,10 +655,10 @@ background-color: var(--secondary-text-color);
 // }
 
 //  Animation Pulse
-.pulse {  
+.pulse {
   display: block;
-margin-bottom: 16px;  
-width: 50px;
+  margin-bottom: 16px;
+  width: 50px;
   height: 50px;
   border-radius: 50%;
   background: transparent;
@@ -649,37 +667,37 @@ width: 50px;
   animation: pulse 2s infinite;
 
   @media screen and (min-width: $desktop) {
-    margin-bottom: 15px;  
+    margin-bottom: 15px;
     width: 85px;
-  height: 85px;
+    height: 85px;
   }
-.pulse:hover {
-  animation: none;
-}
+  .pulse:hover {
+    animation: none;
+  }
 
-@-webkit-keyframes pulse {
-  0% {
-    -webkit-box-shadow: 0 0 0 0 rgb(245, 95, 170);
-  }
-  70% {
+  @-webkit-keyframes pulse {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgb(245, 95, 170);
+    }
+    70% {
       -webkit-box-shadow: 0 0 0 10px rgba(245, 32, 57, 0);
-  }
-  100% {
+    }
+    100% {
       -webkit-box-shadow: 0 0 0 0 rgba(245, 32, 57, 0);
+    }
   }
-}
-@keyframes pulse {
-  0% {
-    -moz-box-shadow: 0 0 0 0 rgba(245, 32, 57, 0.783);
-    box-shadow: 0 0 0 0 rgba(245, 32, 57, 0.783);
-  }
-  70% {
+  @keyframes pulse {
+    0% {
+      -moz-box-shadow: 0 0 0 0 rgba(245, 32, 57, 0.783);
+      box-shadow: 0 0 0 0 rgba(245, 32, 57, 0.783);
+    }
+    70% {
       -moz-box-shadow: 0 0 0 30px rgba(245, 32, 57, 0);
       box-shadow: 0 0 0 30px rgba(245, 32, 57, 0);
-  }
-  100% {
+    }
+    100% {
       -moz-box-shadow: 0 0 0 0 rgba(245, 32, 57, 0);
       box-shadow: 0 0 0 0 rgba(245, 32, 57, 0);
+    }
   }
-}
 }
