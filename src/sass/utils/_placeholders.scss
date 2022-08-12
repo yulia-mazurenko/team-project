@@ -1,19 +1,19 @@
 %list {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 
-    list-style: none;
+  list-style: none;
 }
 
 %link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 %section {
-    padding-top: 60px;
-    padding-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-%section__title {
+  %section__title {
     font-family: 'Titan One';
     font-size: 58px;
     line-height: calc(66 / 58);
@@ -25,38 +25,39 @@
     color: var(--secondary-text-color);
 
     @media screen and (min-width: $tablet) {
-        font-size: 48px;
-        line-height: calc(55 / 48);                   
-    }
-
-    @media screen and (min-width: $desktop) {                 
-            font-size: 58px;
-            line-height: calc(66 / 58);        
-    }
-    
-}
-
-}
-
-.container {
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 0 auto;
-
-    @media screen and (min-width: $mobile) {
-        width: $mobile;
-    }
-
-    @media screen and (min-width: $tablet) {
-        width: $tablet;
-        padding-left: 32px;
-        padding-right: 32px;
+      font-size: 48px;
+      line-height: calc(55 / 48);
     }
 
     @media screen and (min-width: $desktop) {
-        width: $desktop;
-        padding-left: 16px;
-        padding-right: 16px;
-
+      font-size: 58px;
+      line-height: calc(66 / 58);
     }
+  }
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
+
+  //   @media screen and (min-width: 480px) {
+  //     width: 480px;
+  //   }
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }

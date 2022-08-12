@@ -11,7 +11,7 @@
       width: 340px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
       width: 480px;
       margin-bottom: 60px;
     }
@@ -37,7 +37,7 @@
       margin-bottom: 12px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
       font-size: 30px;
       line-height: calc(36 / 30);
       margin-bottom: 16px;
@@ -46,7 +46,7 @@
   .ukrain {
     display: none;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
       display: block;
     }
   }
@@ -86,7 +86,8 @@
     line-height: calc(39 / 35);
     text-transform: uppercase;
     letter-spacing: 00.04em;
-    color: #f1ff00;
+    color: #dae601;
+    // box-shadow: rgba(218, 22, 22, 0.56) 0px 22px 70px 4px;
   }
 
   &__title--bottom {
@@ -107,7 +108,7 @@
       letter-spacing: 0.06em;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
       font-size: 58px;
       line-height: calc(66 / 58);
     }
@@ -145,7 +146,7 @@
     padding-top: 60px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     padding-top: 13px;
   }
 }
@@ -169,7 +170,7 @@
     line-height: calc(26 / 14);
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     font-size: 16px;
     line-height: calc(30 / 16);
   }
